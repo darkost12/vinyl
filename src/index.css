@@ -1,0 +1,350 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  --primary-main-color: #93BFCF;
+  --primary-dark-color: #6096B4;
+  --secondary-main-color: #BDCDD6;
+  --secondary-light-color: #FFEBB7;
+  background-color: var(--primary-dark-color);
+}
+
+body {
+  overscroll-behavior-x: none;
+  min-width: 768px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.disabled {
+  display: none;
+}
+
+div.fixed {
+  position: fixed;
+}
+
+div.tabs-menu {
+  position: absolute;
+  width: 100%;
+}
+
+button.MuiTab-textColorInherit.Mui-selected.faded {
+  opacity: 0.7;
+}
+
+div.info-container {
+  background-color: var(--primary-dark-color);
+  margin: 5% 15%;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  position: sticky;
+}
+
+div.search-bar {
+  display: flex;
+  margin: 5% 4% 0 4%;
+  background-color: var(--primary-dark-color);
+  border-radius: 10px;
+}
+
+span.MuiCheckbox-colorSecondary.Mui-checked {
+  color: var(--secondary-light-color);
+}
+
+label.checkbox-container span.MuiFormControlLabel-label {
+  width: calc(100% - 42px);
+  font-size: 1rem;
+  overflow: hidden;
+  white-space: break-spaces;
+  text-overflow: ellipsis;
+}
+
+div.tabs-menu div div button.MuiButtonBase-root {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #E08300;
+  border-width: 0px;
+  border-radius: 40px;
+  width: 28%;
+  max-width: -webkit-fill-available;
+}
+
+
+@supports (max-width: -moz-available) {
+  div.tabs-menu div div button.MuiButtonBase-root {
+    max-width: -moz-available;
+  }
+
+  .info-miniature {
+    width: -moz-available;
+    height: -moz-available;
+  }
+}
+
+div.tabs-menu div span.MuiTabs-indicator {
+  display: none;
+}
+
+div.tabs-menu div div.MuiTabs-flexContainer {
+  gap: 7%;
+}
+
+ul.MuiImageList-root,
+li.MuiImageListItem-root {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+li.MuiImageListItem-root {
+  height: fit-content !important;
+  position: relative;
+  aspect-ratio: 1/1;
+}
+
+div.MuiImageListItem-item {
+  width: 80%;
+  height: 80%;
+  margin: 10% 10%;
+  display: flex;
+  /* justify-content: center; */
+}
+
+img.thumbnail {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+div.MuiImageListItem-item:not(:hover) {
+  transform: scale(1);
+  transition: 1s;
+}
+
+div.MuiImageListItem-item:not(:hover) img.greyscale {
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+div.MuiImageListItem-item:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+div.MuiImageListItem-item:hover img.greyscale {
+  filter: grayscale(0%);
+  transition: 1s;
+}
+
+div.scroll-top-container {
+  position: fixed;
+  display: inline;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 20px;
+  background: var(--primary-dark-color);
+}
+
+span.scroll-top {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 3px;
+}
+
+div[role=presentation]>div {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.info-back-button {
+  position: fixed;
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 10%;
+  color: var(--primary-dark-color);
+  font-size: 50px;
+  left: 2px;
+  height: 10%;
+  top: 45%;
+}
+
+.info-header {
+  display: grid;
+  height: 50%;
+  padding-top: 5%;
+  grid-template-columns: 3fr 3fr;
+  width: 100%;
+}
+
+.info-miniature-container {
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  margin: auto 0;
+  padding-left: 10%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info-miniature {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+
+.info-gist-container {
+  flex-direction: column;
+  display: flex;
+  margin: 0 5%;
+}
+
+.info-gist,
+.info-song,
+.side-number {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  color: var(--secondary-light-color)
+}
+
+.info-title {
+  font-size: 1.8rem;
+  word-break: break-word;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.info-artist,
+.info-released,
+.song-title,
+.song-duration,
+.song-index,
+.side-number {
+  font-size: 1.5rem;
+}
+
+.info-songs {
+  margin-top: 5%;
+}
+
+.info-side {
+  margin: 0 5%;
+  padding-bottom: 5%;
+}
+
+.info-song {
+  display: grid;
+  grid-template-columns: 2fr 11fr 3fr;
+}
+
+.song-duration {
+  justify-self: flex-end;
+}
+
+.nothing {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 2rem;
+  letter-spacing: 0.00938em;
+  color: var(--primary-dark-color);
+}
+
+.info-preview-container {
+  position: absolute;
+  background-color: var(--secondary-main-color);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 15%;
+  margin: 25% auto 0 73%;
+}
+
+.info-preview-container:hover {
+  transform: translate(10%, 0);
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.info-preview {
+  position: absolute;
+  height: 80%;
+  right: 0;
+  margin: 6% 7% 0 0;
+  z-index: 0;
+  animation: spin 1.5s linear infinite forwards;
+  -webkit-animation: spin 1.5s linear infinite forwards;
+  -moz-animation: spin 1.5s linear infinite forwards;
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+}
+
+.info-preview:hover {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.info-preview-tonearm {
+  position: relative;
+  transform: rotate(10deg);
+  margin: 4% 5% auto 82%;
+  width: 12%;
+  z-index: 1;
+}
+
+.info-preview-tonearm:hover+.info-preview,
+.info-preview-container:hover>.info-preview {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "vinyl",
+  "bsc-flags": [
+    "-open ReactV3",
+    "-open Belt"
+  ],
+  "jsx": {
+    "version": 3
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": {
+    "module": "es6"
+  },
+  "suffix": ".mjs",
+  "bs-dependencies": [
+    "@rescript/react",
+    "rescript-material-ui",
+    "rescript-json"
+  ],
+  "warnings": {
+    "number": "+A-3-4-9-40-42-44-102-20",
+    "error": "+A"
+  }
+}

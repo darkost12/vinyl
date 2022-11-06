@@ -1,0 +1,28 @@
+{
+  "name": "vinyl",
+  "version": "0.0.1",
+  "scripts": {
+    "compile": "rescript build -with-deps",
+    "watch": "rescript build -with-deps -w",
+    "clean": "rescript clean -with-deps",
+    "bundle:dev": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --watch --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\"",
+    "bundle": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --minify --bundle --outfile=dist/bundle.js"
+  },
+  "description": "My vinyl showcase",
+  "repository": "https://github.com/darkost12/vinyl",
+  "author": "darkost12",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@rescript/react": "0.11",
+    "js-yaml": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rescript-json": "^1.0.6",
+    "rescript-material-ui": "^3.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.13",
+    "rescript": "10.1"
+  }
+}
