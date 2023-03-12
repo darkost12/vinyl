@@ -15,31 +15,12 @@ let make = () => {
   switch Validation.decode(Database.entries) {
   | Ok(plates) =>
     let context = State.useContext()
-
-    let (position, setPosition) = React.useState(() => Bindings.scrollTop())
-
-    let goToTop = () => {
-      Bindings.setScrollTop(0)
-    }
-
-    let handleScroll = () => {
-      setPosition(_ => Bindings.scrollTop())
-    }
-
-    React.useEffect0(() => {
-      Bindings.addScrollListener(handleScroll)
-      Some(() => Bindings.removeScrollListener(handleScroll))
-    })
+    let scrollableRef = React.useRef(Js.Nullable.null)
 
     <State.Context.Provider value=context>
       <Mui.ThemeProvider theme>
-        <Header goToTop />
-        <Body plates />
-        {if position > 500 {
-          <GoToTopButton goToTop />
-        } else {
-          React.null
-        }}
+        <Header scrollableRef />
+        <Body plates scrollableRef />
       </Mui.ThemeProvider>
     </State.Context.Provider>
   | Error(error) =>

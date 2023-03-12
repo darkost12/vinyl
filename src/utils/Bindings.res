@@ -16,18 +16,20 @@ external _dateTimeFormat: option<string> => intl = "DateTimeFormat"
 
 let formatDate = (date, locale) => _format(_dateTimeFormat(locale), date)
 
-let scrollTop: unit => int = %raw(`
-  function() { return window.document.documentElement.scrollTop }
+let refToOption = (ref: React.ref<Js.Nullable.t<Dom.element>>) => ref.current->Js.Nullable.toOption
+
+let scrollTop: Dom.element => int = %raw(`
+  function(el) { return el.scrollTop }
 `)
 
-let setScrollTop: int => unit = %raw(`
-  function(offset) { window.document.documentElement.scrollTop = offset }
+let setScrollTop: (Dom.element, int) => unit = %raw(`
+  function(el, offset) { el.scrollTop = offset }
 `)
 
-let addScrollListener: (unit => unit) => unit = %raw(`
-  function(f) { window.addEventListener("scroll", f) }
+let addScrollListener: (Dom.element, unit => unit) => unit = %raw(`
+  function(el, f) { el.addEventListener("scroll", f) }
 `)
 
-let removeScrollListener: (unit => unit) => unit = %raw(`
-  function(f) { window.removeEventListener("scroll", f) }
+let removeScrollListener: (Dom.element, unit => unit) => unit = %raw(`
+  function(el, f) { el.removeEventListener("scroll", f) }
 `)

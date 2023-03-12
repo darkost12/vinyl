@@ -34,7 +34,7 @@ let make = (~plates: Types.Plates.t) => {
     flexDirection={bStr("column")}
     margin={bStr("2% 5%")}
     overflow={bStr("scroll")}
-    height={bStr("calc(100% - 120px)")}>
+    height={bStr("-webkit-fill-available")}>
     {knownGenres
     ->Array.map(genre => {
       <Mui.FormControlLabel

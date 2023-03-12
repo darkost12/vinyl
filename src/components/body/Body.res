@@ -13,9 +13,8 @@ let filterByGenres = (albums: array<Types.Album.t>, selectedGenres) =>
   }
 
 @react.component
-let make = (~plates: Types.Plates.t) => {
+let make = (~plates: Types.Plates.t, ~scrollableRef) => {
   let {activeTab, query, genres}: StateTypes.State.t = State.useState()
-
   let displayedPlates = switch query {
   | "" =>
     switch activeTab {
@@ -38,23 +37,52 @@ let make = (~plates: Types.Plates.t) => {
     })
   }
 
+  let (position, setPosition) = React.useState(() =>
+    switch Bindings.refToOption(scrollableRef) {
+    | Some(el) => Bindings.scrollTop(el)
+    | None => 0
+    }
+  )
+
+  React.useEffect0(() => {
+    switch Bindings.refToOption(scrollableRef) {
+    | Some(el) =>
+      let handleScroll = () => setPosition(_ => Bindings.scrollTop(el))
+
+      Bindings.addScrollListener(el, handleScroll)
+      Some(() => Bindings.removeScrollListener(el, handleScroll))
+    | None => None
+    }
+  })
+
   <B minHeight={bStr("100%")} paddingTop={bStr("70px")} display={bStr("flex")}>
     <B
       bgcolor={bColor(#"primary.main")}
       display={bStr("flex")}
       flexDirection={bStr("column")}
-      flexGrow={bInt(1)}>
+      flexGrow={bInt(1)}
+      paddingBottom={bStr("70px")}
+      height={bStr("100%")}
+      width={bStr("100%")}
+      className={"fixed"}>
       <B
         bgcolor={bColor(#"secondary.main")}
         width={bStr("70%")}
         flexGrow={bInt(1)}
-        margin={bStr("auto")}>
+        overflow={bStr("scroll")}
+        margin={bStr("auto")}
+        ref={ReactDOM.Ref.domRef(scrollableRef)}>
         {if Array.length(displayedPlates) == 0 {
           <BodyNothingFound />
         } else {
           <BodyImages displayedPlates />
         }}
       </B>
+      {if position > 500 {
+        <GoToTopButton scrollableRef />
+      } else {
+        React.null
+      }}
     </B>
     <Sidebar plates />
   </B>

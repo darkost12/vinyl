@@ -1,7 +1,7 @@
 open Box
 
 @react.component
-let make = (~goToTop) => {
+let make = (~scrollableRef) => {
   <B
     className={"fixed"}
     bgcolor={bColor(#"primary.dark")}
@@ -12,6 +12,6 @@ let make = (~goToTop) => {
     justifyContent={bStr("center")}
     minWidth={bStr("768px")}
     zIndex={3}>
-    <HeaderMenuTabs goToTop />
+    <HeaderMenuTabs scrollableRef />
   </B>
 }

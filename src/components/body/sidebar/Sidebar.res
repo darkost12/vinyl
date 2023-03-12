@@ -7,8 +7,9 @@ let make = (~plates) => {
     display={bStr("flex")}
     flexDirection={bStr("column")}
     width={bStr("15%")}
-    height={bStr("100%")}
     minWidth={bStr("114px")}
+    height={bStr("calc(100% - 70px)")}
+    maxHeight={bStr("fit-content")}
     className="fixed">
     <SidebarSearch />
     <SidebarGenreFilter plates />

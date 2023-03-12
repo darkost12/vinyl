@@ -2,7 +2,7 @@ open Mui
 open Types.Tab
 
 @react.component
-let make = (~goToTop) => {
+let make = (~scrollableRef: React.ref<Js.Nullable.t<Dom.element>>) => {
   let ({activeTab, query, genres}: StateTypes.State.t, dispatch) = State.use()
   let selectedClass = query != "" ? "faded" : ""
   let handleChange = (_, newValue) => {
@@ -12,7 +12,10 @@ let make = (~goToTop) => {
     }
 
     dispatch(TabChanged(newValue->Any.unsafeToString->fromString))
-    goToTop()
+    switch scrollableRef.current->Js.Nullable.toOption {
+    | Some(element) => Bindings.setScrollTop(element, 0)
+    | None => ()
+    }
   }
 
   <Tabs

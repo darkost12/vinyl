@@ -3,16 +3,9 @@ module Drawer = Mui.Drawer
 
 module BackButton = {
   @react.component
-  let make = (~onClick) => {
-    let (className, setClassName) = React.useState(() => "info-back-button")
-    <button
-      onClick={_e => {
-        setClassName(_ => "disabled")
-        onClick()
-      }}
-      className>
-      {React.string("<")}
-    </button>
+  let make = (~onClick, ~closing) => {
+    let className = "info-back-button no-select" ++ (closing ? " disabled" : "")
+    <button onClick className> {React.string("<")} </button>
   }
 }
 
@@ -34,15 +27,20 @@ module PreviewLink = {
 @react.component
 let make = (~album: Types.Album.t) => {
   let (state, dispatch) = State.use()
+  let (closing, setClosing) = React.useState(_ => false)
 
+  let onClose = _ => {
+    setClosing(_ => true)
+    dispatch(HighlightedChanged(None))
+  }
   <Drawer
     className={"drawer"}
     anchor=#left
     transitionDuration={Drawer.TransitionDuration.int(750)}
     \"PaperProps"={{"style": {"width": "100%"}}}
     \"open"={Types.Album.setAndEql(state.highlighted, album)}
-    onClose={_ => dispatch(HighlightedChanged(None))}>
-    <BackButton onClick={() => dispatch(HighlightedChanged(None))} />
+    onClose>
+    <BackButton closing onClick={onClose} />
     <B height={bStr("auto")} width={bStr("100%")}>
       <PreviewLink url=album.previewUrl />
       <B className={"info-container"}>

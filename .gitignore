@@ -3,3 +3,4 @@
 /lib
 /dist/*
 !/dist/.gitkeep
+.vercel
