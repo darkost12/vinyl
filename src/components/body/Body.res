@@ -67,10 +67,10 @@ let make = (~plates: Types.Plates.t, ~scrollableRef) => {
       className={"fixed"}>
       <B
         bgcolor={bColor(#"secondary.main")}
-        width={bStr("70%")}
+        width={bStr("-webkit-fill-available;")}
         flexGrow={bInt(1)}
         overflow={bStr("scroll")}
-        margin={bStr("auto")}
+        margin={bStr("0 max(15%, 114px);")}
         ref={ReactDOM.Ref.domRef(scrollableRef)}>
         {if Array.length(displayedPlates) == 0 {
           <BodyNothingFound />

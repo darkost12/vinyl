@@ -19,7 +19,7 @@ let make = (~scrollableRef: React.ref<Js.Nullable.t<Dom.element>>) => {
   }
 
   <Tabs
-    centered=true
+    centered=false
     value={activeTab->toString->Any.make}
     onChange=handleChange
     className={"tabs-menu"}>

@@ -3,8 +3,12 @@
 *::after {
   margin: 0;
   box-sizing: border-box;
+  scrollbar-width: none
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 body,
 #root {
@@ -30,7 +34,7 @@ html {
 
 body {
   overscroll-behavior-x: none;
-  min-width: 768px;
+  min-width: 450px;
 }
 
 a {
@@ -55,7 +59,9 @@ div.fixed {
 
 div.tabs-menu {
   position: absolute;
-  width: 100%;
+  max-width: 60%;
+  width: -webkit-fill-available;
+  margin: 0 max(20%, 114px + 5%);
 }
 
 button.MuiTab-textColorInherit.Mui-selected.faded {
@@ -93,16 +99,20 @@ label.checkbox-container span.MuiFormControlLabel-label {
 div.tabs-menu div div button.MuiButtonBase-root {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: #E08300;
   border-width: 0px;
   border-radius: 40px;
-  width: 28%;
+  width: 41%;
   max-width: -webkit-fill-available;
 }
 
 
 @supports (max-width: -moz-available) {
+  div.tabs-menu {
+    width: -moz-available;
+  }
+
   div.tabs-menu div div button.MuiButtonBase-root {
     max-width: -moz-available;
   }
@@ -118,7 +128,8 @@ div.tabs-menu div span.MuiTabs-indicator {
 }
 
 div.tabs-menu div div.MuiTabs-flexContainer {
-  gap: 7%;
+  justify-content: space-between;
+  gap: 10%;
 }
 
 ul.MuiImageList-root,
@@ -288,6 +299,7 @@ div[role=presentation]>div {
   line-height: 1.5;
   margin-top: 25%;
   font-size: 2rem;
+  text-align: center;
   letter-spacing: 0.00938em;
   color: var(--primary-dark-color);
 }

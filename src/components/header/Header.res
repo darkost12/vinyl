@@ -10,7 +10,7 @@ let make = (~scrollableRef) => {
     display={bStr("flex")}
     alignItems={bStr("center")}
     justifyContent={bStr("center")}
-    minWidth={bStr("768px")}
+    minWidth={bStr("450px")}
     zIndex={3}>
     <HeaderMenuTabs scrollableRef />
   </B>
