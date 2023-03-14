@@ -26,19 +26,28 @@ module PreviewLink = {
 
 @react.component
 let make = (~album: Types.Album.t) => {
-  let (state, dispatch) = State.use()
+  let ({highlighted}: StateTypes.State.t, dispatch) = State.use()
+  let (opened, setOpened) = React.useState(_ => Types.Album.setAndEql(highlighted, album))
   let (closing, setClosing) = React.useState(_ => false)
 
   let onClose = _ => {
     setClosing(_ => true)
     dispatch(HighlightedChanged(None))
+    Bindings.History.pushState("/")
+    setClosing(_ => false)
   }
+
+  React.useEffect1(() => {
+    setOpened(_ => Types.Album.setAndEql(highlighted, album))
+    None
+  }, [highlighted])
+
   <Drawer
     className={"drawer"}
     anchor=#left
     transitionDuration={Drawer.TransitionDuration.int(750)}
     \"PaperProps"={{"style": {"width": "100%"}}}
-    \"open"={Types.Album.setAndEql(state.highlighted, album)}
+    \"open"=opened
     onClose>
     <BackButton closing onClick={onClose} />
     <B height={bStr("auto")} width={bStr("100%")}>

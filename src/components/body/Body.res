@@ -14,7 +14,9 @@ let filterByGenres = (albums: array<Types.Album.t>, selectedGenres) =>
 
 @react.component
 let make = (~plates: Types.Plates.t, ~scrollableRef) => {
-  let {activeTab, query, genres}: StateTypes.State.t = State.useState()
+  let {activeTab, query, genres} = State.useState()
+  let {scrollPosition} = Listeners.use(~scrollableRef)
+
   let displayedPlates = switch query {
   | "" =>
     switch activeTab {
@@ -36,24 +38,6 @@ let make = (~plates: Types.Plates.t, ~scrollableRef) => {
       )
     })
   }
-
-  let (position, setPosition) = React.useState(() =>
-    switch Bindings.refToOption(scrollableRef) {
-    | Some(el) => Bindings.scrollTop(el)
-    | None => 0
-    }
-  )
-
-  React.useEffect0(() => {
-    switch Bindings.refToOption(scrollableRef) {
-    | Some(el) =>
-      let handleScroll = () => setPosition(_ => Bindings.scrollTop(el))
-
-      Bindings.addScrollListener(el, handleScroll)
-      Some(() => Bindings.removeScrollListener(el, handleScroll))
-    | None => None
-    }
-  })
 
   <B minHeight={bStr("100%")} paddingTop={bStr("70px")} display={bStr("flex")}>
     <B
@@ -78,7 +62,7 @@ let make = (~plates: Types.Plates.t, ~scrollableRef) => {
           <BodyImages displayedPlates />
         }}
       </B>
-      {if position > 500 {
+      {if scrollPosition > 500 {
         <GoToTopButton scrollableRef />
       } else {
         React.null

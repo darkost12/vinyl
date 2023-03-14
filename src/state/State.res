@@ -12,6 +12,7 @@ let reducer = (state: State.t, action: Action.t) => {
   | QueryChanged(query) => {...state, query}
   | GenresChanged(genres) => {...state, genres}
   | HighlightedChanged(highlighted) => {...state, highlighted}
+  | LastVisitedChanged(lastVisited) => {...state, lastVisited}
   }
 }
 

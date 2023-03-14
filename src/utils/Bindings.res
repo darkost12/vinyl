@@ -26,10 +26,26 @@ let setScrollTop: (Dom.element, int) => unit = %raw(`
   function(el, offset) { el.scrollTop = offset }
 `)
 
-let addScrollListener: (Dom.element, unit => unit) => unit = %raw(`
-  function(el, f) { el.addEventListener("scroll", f) }
-`)
+module History = {
+  @val @scope(("window", "history"))
+  external _pushState: (Js.Nullable.t<string>, Js.Nullable.t<string>, string) => unit = "pushState"
 
-let removeScrollListener: (Dom.element, unit => unit) => unit = %raw(`
-  function(el, f) { el.removeEventListener("scroll", f) }
-`)
+  @val @scope(("window", "history"))
+  external _replaceState: (Js.Nullable.t<string>, Js.Nullable.t<string>, string) => unit =
+    "replaceState"
+
+  let pushState = (~_state=Js.Nullable.null, ~_unused=Js.Nullable.null, path) =>
+    _pushState(_state, _unused, path)
+
+  let replaceState = (~_state=Js.Nullable.null, ~_unused=Js.Nullable.null, path) =>
+    _replaceState(_state, _unused, path)
+}
+
+@val external window: Dom.element = "window"
+
+@val @scope(("window", "location"))
+external _href: string = "href"
+@val @scope(("window", "location"))
+external _origin: string = "origin"
+
+let relativePath = () => Js.String2.replace(_href, _origin, "")

@@ -6,7 +6,11 @@ let make = (~greyscale=false, ~album: Types.Album.t) => {
   <Mui.Box>
     <img
       src={album.coverUrl}
-      onClick={_ => dispatch(HighlightedChanged(Some(album)))}
+      onClick={_ => {
+        dispatch(LastVisitedChanged(Some(album)))
+        dispatch(HighlightedChanged(Some(album)))
+        Bindings.History.pushState("/#")
+      }}
       loading={#"lazy"}
       className
     />
