@@ -2248,6 +2248,24 @@ wishlist:
           duration: '4:05'
         - title: Absolutely Curtains
           duration: '5:52'
+  - title: Ocean
+    artist: Eloy
+    released: 'December 1977'
+    coverUrl: https://s.mxmcdn.net/images-storage/albums/8/0/4/4/0/7/25704408_800_800.jpg
+    wikiUrl: https://en.wikipedia.org/wiki/Ocean_(Eloy_album)
+    genres:
+      - progressive rock
+    sides:
+      - songs:
+        - title: Poseidon's Creation
+          duration: '11:38'
+        - title: Incarnation of the Logos
+          duration: '8:25'
+      - songs:
+        - title: Decay of the Logos
+          duration: '8:15'
+        - title: Atlantis' Agony at June 5th - 8498, 13 P.M. Gregorian Earthtime
+          duration: '15:35'
   - title: Octopus
     artist: Gentle Giant
     released: '1972-12-01'

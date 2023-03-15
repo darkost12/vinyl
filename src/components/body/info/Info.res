@@ -28,13 +28,10 @@ module PreviewLink = {
 let make = (~album: Types.Album.t) => {
   let ({highlighted}: StateTypes.State.t, dispatch) = State.use()
   let (opened, setOpened) = React.useState(_ => Types.Album.setAndEql(highlighted, album))
-  let (closing, setClosing) = React.useState(_ => false)
 
   let onClose = _ => {
-    setClosing(_ => true)
     dispatch(HighlightedChanged(None))
     Bindings.History.pushState("/")
-    setClosing(_ => false)
   }
 
   React.useEffect1(() => {
@@ -49,7 +46,7 @@ let make = (~album: Types.Album.t) => {
     \"PaperProps"={{"style": {"width": "100%"}}}
     \"open"=opened
     onClose>
-    <BackButton closing onClick={onClose} />
+    <BackButton closing={highlighted == None} onClick={onClose} />
     <B height={bStr("auto")} width={bStr("100%")}>
       <PreviewLink url=album.previewUrl />
       <B className={"info-container"}>

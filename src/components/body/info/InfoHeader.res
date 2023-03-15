@@ -4,7 +4,7 @@ open Box
 let make = (~album: Types.Album.t) =>
   <B className={"info-header"}>
     <B className={"info-miniature-container"}>
-      <img src={album.coverUrl} loading={#"lazy"} className={"info-miniature no-select"} />
+      <img src={album.coverUrl} className={"info-miniature no-select"} />
     </B>
     <B className={"info-gist-container"} display={bStr("absolute")}>
       <p className={"info-title info-gist"}> {React.string(album.title)} </p>

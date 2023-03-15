@@ -24,11 +24,13 @@ let make = (~scrollableRef: React.ref<Js.Nullable.t<Dom.element>>) => {
     onChange=handleChange
     className={"tabs-menu"}>
     <Tab
+      className="left"
       label={"Owned"->React.string}
       value={Any.fromString("owned")}
       classes={Mui.Tab.Classes.make(~selected=selectedClass, ())}
     />
     <Tab
+      className="right"
       label={"Wishlist"->React.string}
       value={Any.fromString("wishlist")}
       classes={Mui.Tab.Classes.make(~selected=selectedClass, ())}

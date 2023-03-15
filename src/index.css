@@ -59,9 +59,8 @@ div.fixed {
 
 div.tabs-menu {
   position: absolute;
-  max-width: 60%;
   width: -webkit-fill-available;
-  margin: 0 max(20%, 114px + 5%);
+  margin: 0 max(15%, 114px);
 }
 
 button.MuiTab-textColorInherit.Mui-selected.faded {
@@ -102,11 +101,19 @@ div.tabs-menu div div button.MuiButtonBase-root {
   font-size: 0.9rem;
   background-color: #E08300;
   border-width: 0px;
-  border-radius: 40px;
-  width: 41%;
+  width: 50%;
   max-width: -webkit-fill-available;
 }
 
+div.tabs-menu div div button.MuiButtonBase-root.left {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+div.tabs-menu div div button.MuiButtonBase-root.right {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
 
 @supports (max-width: -moz-available) {
   div.tabs-menu {
@@ -129,7 +136,6 @@ div.tabs-menu div span.MuiTabs-indicator {
 
 div.tabs-menu div div.MuiTabs-flexContainer {
   justify-content: space-between;
-  gap: 10%;
 }
 
 ul.MuiImageList-root,
@@ -149,7 +155,6 @@ div.MuiImageListItem-item {
   height: 80%;
   margin: 10% 10%;
   display: flex;
-  /* justify-content: center; */
 }
 
 img.thumbnail {
@@ -260,7 +265,7 @@ div[role=presentation]>div {
 }
 
 .info-title {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   word-break: break-word;
   line-height: 1.2;
   margin-bottom: 1rem;
