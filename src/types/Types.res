@@ -9,7 +9,7 @@ module Duration = {
 module Song = {
   type t = {
     title: string,
-    duration: Duration.t,
+    duration: option<Duration.t>,
   }
 
   let make = (title, duration) => {
@@ -29,12 +29,14 @@ module ReleaseDate = {
     | UpToDate(Js.Date.t)
     | UpToMonth(string, int)
     | UpToYear(int)
+    | SeveralYears(array<int>)
 
   let toString = release =>
     switch release {
     | UpToDate(d) => Bindings.formatDate(d, Some("en-GB"))
     | UpToMonth((m, y)) => m ++ " " ++ Int.toString(y)
     | UpToYear(y) => Int.toString(y)
+    | SeveralYears(years) => years->Array.joinWith("/", Int.toString)
     }
 }
 

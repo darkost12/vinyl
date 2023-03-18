@@ -981,6 +981,24 @@ owned:
           duration: '2:30'
         - title: Fairies Wear Boots
           duration: '6:15'
+  - title: Piano concerto No.2, Three Preludes
+    artist: Sergei Rachmaninov
+    released: '1900/1903/1910'
+    coverUrl: https://i.ebayimg.com/images/g/sqoAAOSwCGVX54a1/s-l500.jpg
+    previewUrl: https://youtu.be/jTAqdVTASfA
+    wikiUrl: https://en.wikipedia.org/wiki/Sergei_Rachmaninoff#Works
+    genres:
+      - symphonic
+      - classical
+    sides:
+      - songs:
+        - title: 'Concerto No.2 in C Minor Op.18 1st Movement: Allegro moderato'
+        - title: 'Concerto No.2 in C Minor Op.18 2nd Movement: Adagio sostenuto'
+      - songs:
+        - title: 'Concerto No.2 in C Minor Op.18 3rd Movement: Allegro scherzando'
+        - title: Prelude in D Major Op.23 No.4
+        - title: Prelude in G Major Op.32 No.5
+        - title: Prelude in G Sharp Minor Op.32 No.12
   - title: Pretty. Odd.
     artist: Panic! at the Disco
     released: '2008-03-21'
@@ -1369,6 +1387,32 @@ owned:
           duration: '6:00'
         - title: The Grand Finale
           duration: '1:57'
+  - title: The Planets
+    artist: Gustav Holst
+    released: '1918-09-29'
+    coverUrl: https://avatars.yandex.net/get-music-content/41288/7c3a87b9.a.690131-1/m1000x1000?webp=false
+    previewUrl: https://youtu.be/MgIOBa4vK2E
+    wikiUrl: https://en.wikipedia.org/wiki/The_Planets
+    genres:
+      - symphonic
+      - classical
+    sides:
+      - songs:
+        - title: Mars, the Bringer of War
+          duration: '7:24'
+        - title: Venus, the Bringer of Peace
+          duration: '7:26'
+        - title: Mercury, the Winged Messenger
+          duration: '3:48'
+        - title: Jupiter, the Bringer of Jollity
+          duration: '7:36'
+      - songs:
+        - title: Saturn, the Bringer of Old Age
+          duration: '9:11'
+        - title: Uranus, the Magician
+          duration: '5:49'
+        - title: Neptune, the Mystic
+          duration: '8:13'
   - title: The Snow Goose
     artist: Camel
     released: 'April 1975'
@@ -2590,31 +2634,6 @@ wishlist:
           duration: '2:23'
         - title: It
           duration: '4:20'
-  - title: The Planets
-    artist: Gustav Holst
-    released: '1918-09-29'
-    coverUrl: https://images.universal-music.de/img/assets/542/542960/4/720/entree-holst-the-planets-00028947750109.jpg
-    wikiUrl: https://en.wikipedia.org/wiki/The_Planets
-    genres:
-      - symphonic
-      - classical
-    sides:
-      - songs:
-        - title: Mars, the Bringer of War
-          duration: '7:24'
-        - title: Venus, the Bringer of Peace
-          duration: '7:26'
-        - title: Mercury, the Winged Messenger
-          duration: '3:48'
-        - title: Jupiter, the Bringer of Jollity
-          duration: '7:36'
-      - songs:
-        - title: Saturn, the Bringer of Old Age
-          duration: '9:11'
-        - title: Uranus, the Magician
-          duration: '5:49'
-        - title: Neptune, the Mystic
-          duration: '8:13'
   - title: The Velvet Underground & Nico
     artist: The Velvet Underground & Nico
     released: '1967-03-12'

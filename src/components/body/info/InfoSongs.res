@@ -19,7 +19,9 @@ let make = (~album: Types.Album.t) => {
                 {React.string(Js.Int.toString(i + previousSidesSongs.contents + 1) ++ ".")}
               </span>
               <span className={"song-title"}> {React.string(track.title)} </span>
-              <span className={"song-duration"}> {React.string(track.duration)} </span>
+              <span className={"song-duration"}>
+                {React.string(Option.getWithDefault(track.duration, "—"))}
+              </span>
             </B>
           )
           previousSidesSongs.contents = previousSidesSongs.contents + Array.length(side.songs)

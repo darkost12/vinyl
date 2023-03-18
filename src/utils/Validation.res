@@ -42,29 +42,37 @@ let decodeDate = D.map(D.string, ~f=v => {
       Some(ReleaseDate.UpToDate(Js.Date.makeWithYMD(~year, ~month=month -. 1.0, ~date, ())))
     }
   | [input] =>
-    switch Js.String2.split(input, " ") {
-    | [string] =>
-      switch Int.fromString(string) {
-      | Some(y) => Some(UpToYear(y))
+    switch input->Js.String2.split("/")->Array.keepMap(Int.fromString) {
+    | [] =>
+      switch Js.String2.split(input, " ") {
+      | [month, year] =>
+        switch Int.fromString(year) {
+        | Some(y) if Array.some(months, m => m == month) => Some(UpToMonth(month, y))
+        | _ =>
+          Js.log("Date is invalid: " ++ v)
+          None
+        }
+      | [string] =>
+        switch Int.fromString(string) {
+        | Some(y) => Some(UpToYear(y))
+        | _ =>
+          Js.log("Date is invalid: " ++ v)
+          None
+        }
       | _ =>
-        Js.log("Date is invalid: " ++ v)
+        Js.log(
+          "Unsupported date format. Expected: YYYY-MM-DD or 'Month YYYY' or YYYY or YYYY/YYYY.... Provided: " ++
+          v,
+        )
         None
       }
-    | [month, year] =>
-      switch Int.fromString(year) {
-      | Some(y) if Array.some(months, m => m == month) => Some(UpToMonth(month, y))
-      | _ =>
-        Js.log("Date is invalid: " ++ v)
-        None
-      }
-    | _ =>
-      Js.log(
-        "Unsupported date format. Expected: YYYY-MM-DD or 'Month YYYY' or YYYY. Provided: " ++ v,
-      )
-      None
+    | years => Some(SeveralYears(years))
     }
   | _ =>
-    Js.log("Unsupported date format. Expected: YYYY-MM-DD or 'Month YYYY' or YYYY. Provided: " ++ v)
+    Js.log(
+      "Unsupported date format. Expected: YYYY-MM-DD or 'Month YYYY' or YYYY or YYYY/YYYY..... Provided: " ++
+      v,
+    )
     None
   }
 })->D.andThen(~f=v =>
@@ -77,7 +85,7 @@ let decodeDate = D.map(D.string, ~f=v => {
 let decodeSong =
   apply((title, duration) => Song.make(title, duration))
   ->map(D.field("title", D.string))
-  ->map(D.field("duration", D.string))
+  ->map(D.option(D.field("duration", D.string)))
 
 let decodeSide = apply(songs => Side.make(songs))->map(D.field("songs", D.array(decodeSong)))
 
