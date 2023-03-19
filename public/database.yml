@@ -878,6 +878,23 @@ owned:
           duration: '4:33'
         - title: White Feather
           duration: '2:24'
+  - title: New World Symphony, Carnival Overture
+    artist: Antonín Dvořák
+    released: '1891/1893'
+    coverUrl: https://i.ebayimg.com/images/g/QpcAAOSwAqdkAjML/s-l500.jpg
+    previewUrl: https://youtu.be/O_tPb4JFgmw
+    wikiUrl: https://en.wikipedia.org/wiki/Symphony_No._9_(Dvo%C5%99%C3%A1k)
+    genres:
+      - symphonic
+      - classical
+    sides:
+      - songs:
+        - title: 'Symphony No.9 in E minor Op.95 1st movement: Adagio - Allegro molto'
+        - title: 'Symphony No.9 in E minor Op.95 2nd movement: Largo'
+        - title: 'Symphony No.9 in E minor Op.95 3rd movement: Molto vivace'
+      - songs:
+        - title: 'Symphony No.9 in E minor Op.95 4th movement: Allegro con fuoco'
+        - title: Carnival Overture, Op.92
   - title: Nursery Cryme
     artist: Genesis
     released: '1971-11-12'
@@ -981,6 +998,26 @@ owned:
           duration: '2:30'
         - title: Fairies Wear Boots
           duration: '6:15'
+  - title: Peer Gynt Suites No.1 and 2
+    artist: Edvard Grieg
+    released: '1876-02-24'
+    coverUrl: https://m.media-amazon.com/images/I/51kzR5rStGL.jpg
+    previewUrl: https://youtu.be/DX8JpDcbB2c
+    wikiUrl: https://en.wikipedia.org/wiki/Peer_Gynt
+    genres:
+      - symphonic
+      - classical
+    sides:
+      - songs:
+        - title: Morning Mood
+        - title: Death of ase
+        - title: Anitra's Dance
+        - title: In the Hall of the Mountain King
+      - songs:
+        - title: Stormy Night (The Return of Peer Gynt)
+        - title: Arabian Dance
+        - title: Rape of the Bride
+        - title: Solvejg's Song
   - title: Piano concerto No.2, Three Preludes
     artist: Sergei Rachmaninov
     released: '1900/1903/1910'
@@ -1391,7 +1428,7 @@ owned:
     artist: Gustav Holst
     released: '1918-09-29'
     coverUrl: https://avatars.yandex.net/get-music-content/41288/7c3a87b9.a.690131-1/m1000x1000?webp=false
-    previewUrl: https://youtu.be/MgIOBa4vK2E
+    previewUrl: https://youtu.be/lB8F852qJsU
     wikiUrl: https://en.wikipedia.org/wiki/The_Planets
     genres:
       - symphonic
