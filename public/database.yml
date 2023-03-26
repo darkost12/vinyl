@@ -66,6 +66,33 @@ owned:
       - songs:
         - title: Sorrow
           duration: '8:46'
+  - title: A Saucerful of Secrets
+    artist: Pink Floyd
+    released: '1968-06-28'
+    coverUrl: https://i.pinimg.com/originals/2b/71/86/2b7186ba3fd7dc712d74dec5cb3a1967.jpg
+    previewUrl: https://youtu.be/0JIP-4L7osA
+    wikiUrl: https://en.wikipedia.org/wiki/A_Saucerful_of_Secrets
+    genres:
+      - psychedelic rock
+      - experimental rock
+      - space rock
+    sides:
+      - songs:
+        - title: Let There Be More Light
+          duration: '5:38'
+        - title: Remember a Day
+          duration: '4:33'
+        - title: Set the Controls for the Heart of the Sun
+          duration: '5:28'
+        - title: Corporal Clegg
+          duration: '4:13'
+      - songs:
+        - title: A Saucerful of Secrets
+          duration: '11:57'
+        - title: See-Saw
+          duration: '4:36'
+        - title: Jugband Blues
+          duration: '3:00'
   - title: A Trick of the Tail
     artist: Genesis
     released: '1976-02-13'
@@ -800,6 +827,32 @@ owned:
           duration: '6:17'
         - title: It Never Rains
           duration: '7:59'
+  - title: Magic Fly
+    artist: Space
+    released: 'April 1977'
+    coverUrl: https://jonman492000.files.wordpress.com/2020/01/spacemagicflyfr.jpg
+    previewUrl: https://youtu.be/ZavwtJxmqJI
+    wikiUrl: https://en.wikipedia.org/wiki/Magic_Fly
+    genres:
+      - synth pop
+      - disco
+    sides:
+      - songs:
+        - title: Fasten Seat Belt
+          duration: '5:58'
+        - title: Ballad For Space Lovers
+          duration: '2:16'
+        - title: Tango In Space
+          duration: '4:28'
+        - title: Flying Nightmare
+          duration: '3:31'
+      - songs:
+        - title: Magic Fly
+          duration: '4:18'
+        - title: Velvet Rape
+          duration: '4:27'
+        - title: Carry On, Turn Me On
+          duration: '8:18'
   - title: Meddle
     artist: Pink Floyd
     released: '1971-10-30'
@@ -1799,32 +1852,6 @@ owned:
           duration: '12:28'
 
 wishlist:
-  - title: A Saucerful of Secrets
-    artist: Pink Floyd
-    released: '1968-06-28'
-    coverUrl: https://i.pinimg.com/originals/2b/71/86/2b7186ba3fd7dc712d74dec5cb3a1967.jpg
-    wikiUrl: https://en.wikipedia.org/wiki/A_Saucerful_of_Secrets
-    genres:
-      - psychedelic rock
-      - experimental rock
-      - space rock
-    sides:
-      - songs:
-        - title: Let There Be More Light
-          duration: '5:38'
-        - title: Remember a Day
-          duration: '4:33'
-        - title: Set the Controls for the Heart of the Sun
-          duration: '5:28'
-        - title: Corporal Clegg
-          duration: '4:13'
-      - songs:
-        - title: A Saucerful of Secrets
-          duration: '11:57'
-        - title: See-Saw
-          duration: '4:36'
-        - title: Jugband Blues
-          duration: '3:00'
   - title: A Tab in the Ocean
     artist: Nektar
     released: 'November 1972'
