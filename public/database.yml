@@ -588,7 +588,7 @@ owned:
   - title: Gaudi
     artist: The Alan Parsons Project
     released: 'January 1987'
-    coverUrl: https://www.the-alan-parsons-project.com/images/gaudi.jpg
+    coverUrl: https://www.progarchives.com/progressive_rock_discography_covers/286/cover_455316832017_r.jpg
     previewUrl: https://youtu.be/ggijVDI6h_0
     wikiUrl: https://en.wikipedia.org/wiki/Gaudi_(The_Alan_Parsons_Project_album)
     genres:
@@ -1136,7 +1136,7 @@ owned:
   - title: Pyramid
     artist: The Alan Parsons Project
     released: 'June 1978'
-    coverUrl: https://www.the-alan-parsons-project.com/images/pyramid.jpg
+    coverUrl: https://uk.rarevinyl.com/cdn/shop/products/the-alan-parsons-project-pyramid-uk-vinyl-lp-album-record-spart1054-288233_1280x1280.jpg?v=1687462788
     previewUrl: https://youtu.be/aLlTcYKfJE4
     wikiUrl: https://en.wikipedia.org/wiki/Pyramid_(The_Alan_Parsons_Project_album)
     genres:
@@ -2401,10 +2401,28 @@ wishlist:
           duration: '3:34'
         - title: River
           duration: '5:53'
+  - title: Pawn Hearts
+    artist: Van der Graaf Generator
+    released: 'October 1971'
+    coverUrl: https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/63/16/c0/6316c045-82c9-d0c2-7c26-20e5d11c2452/00724347489051.jpg/800x800bb.jpg
+    wikiUrl: https://en.wikipedia.org/wiki/Pawn_Hearts
+    genres:
+      - progressive rock
+    sides:
+      - songs:
+        - title: Lemmings (Including Cog)
+          duration: '11:35'
+        - title: Theme One
+          duration: '2:55'
+        - title: Man-Erg
+          duration: '10:19'
+      - songs:
+        - title: A Plague of Lighthouse Keepers
+          duration: '23:04'
   - title: Pieces of Eight
     artist: Styx
     released: '1978-09-01'
-    coverUrl: https://images.fanart.tv/bigpreview/pieces-of-eight-61a7de7f16d8b.jpg
+    coverUrl: https://m.media-amazon.com/images/I/510KEjqFOZL._UF1000,1000_QL80_.jpg
     wikiUrl: https://en.wikipedia.org/wiki/Pieces_of_Eight
     genres:
       - progressive rock
@@ -2435,7 +2453,7 @@ wishlist:
   - title: Rumours
     artist: Fleetwood Mac
     released: '1977-02-04'
-    coverUrl: https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71YQa+dEhwL._AC_SX466_.jpg
+    coverUrl: https://faroutmagazine.co.uk/static/uploads/2020/10/Fleetwood-mac-rumours.jpg
     wikiUrl: https://en.wikipedia.org/wiki/Rumours_(album)
     genres:
       - pop rock
