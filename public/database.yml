@@ -2592,6 +2592,39 @@ wishlist:
           duration: '1:55'
         - title: Long Goodbyes
           duration: '5:08'
+  - title: Surrealistic Pillow
+    artist: Jefferson Airplane
+    released: '1967-02-01'
+    coverUrl: https://images.genius.com/da9b4e80855e1ea8d6fb3d61c89a1248.1000x1000x1.jpg
+    wikiUrl: https://en.wikipedia.org/wiki/Surrealistic_Pillow
+    genres:
+      - folk rock
+      - psychedelic rock
+    sides:
+      - songs:
+        - title: She Has Funny Cars
+          duration: '3:03'
+        - title: Somebody to Love
+          duration: '2:54'
+        - title: My Best Friend
+          duration: '2:59'
+        - title: Today
+          duration: '2:57'
+        - title: Comin' Back to Me
+          duration: '5:18'
+      - songs:
+        - title: 3/5 of a Mile in 10 Seconds
+          duration: '3:39'
+        - title: D.C.B.A.–25
+          duration: '2:33'
+        - title: How Do You Feel
+          duration: '3:26'
+        - title: Embryonic Journey
+          duration: '1:51'
+        - title: White Rabbit
+          duration: '2:27'
+        - title: Plastic Fantastic Lover
+          duration: '2:23'
   - title: The Division Bell
     artist: Pink Floyd
     released: '1994-03-28'
