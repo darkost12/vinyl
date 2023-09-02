@@ -296,7 +296,7 @@ owned:
   - title: Business as Usual
     artist: Men at Work
     released: '1981-11-09'
-    coverUrl: https://i.ebayimg.com/images/g/oKkAAOSwXFRcQern/s-l1600.jpg
+    coverUrl: https://media.s-bol.com/2Rg2PExK04BJ/1200x1200.jpg
     previewUrl: https://youtu.be/E0iIBHYjYqA
     wikiUrl: https://en.wikipedia.org/wiki/Business_as_Usual_(Men_at_Work_album)
     genres:
@@ -343,6 +343,38 @@ owned:
           duration: '10:12'
         - title: Siberian Khatru
           duration: '8:56'
+  - title: Coming Down Your Way
+    artist: Three Dog Night
+    released: '1975-05-01'
+    coverUrl: https://images.genius.com/fed22452ea6da1360f9775bc7069008c.1000x1000x1.png
+    previewUrl: https://youtu.be/UjZ0l6oepko
+    wikiUrl: https://en.wikipedia.org/wiki/Coming_Down_Your_Way
+    genres:
+      - pop rock
+      - soft rock
+    sides:
+      - songs:
+        - title: Til the World Ends
+          duration: '3:31'
+        - title: You Can Leave Your Hat On
+          duration: '4:11'
+        - title: Good Old Feeling
+          duration: '3:09'
+        - title: Mind Over Matter
+          duration: '2:56'
+        - title: Midnight Flyer
+          duration: '4:33'
+      - songs:
+        - title: Kite Man
+          duration: '3:37'
+        - title: Coming Down Your Way
+          duration: '3:09'
+        - title: When It's Over
+          duration: '3:37'
+        - title: Lean Back, Hold Steady
+          duration: '3:50'
+        - title: Yo Te Quiero Hablar (Take You Down)
+          duration: '3:11'
   - title: Crime of the Century
     artist: Supertramp
     released: '1974-09-13'
@@ -934,7 +966,7 @@ owned:
   - title: New World Symphony, Carnival Overture
     artist: Antonín Dvořák
     released: '1891/1893'
-    coverUrl: https://i.ebayimg.com/images/g/QpcAAOSwAqdkAjML/s-l500.jpg
+    coverUrl: https://m.media-amazon.com/images/I/51fnX4qqDXL._UF1000,1000_QL80_.jpg
     previewUrl: https://youtu.be/O_tPb4JFgmw
     wikiUrl: https://en.wikipedia.org/wiki/Symphony_No._9_(Dvo%C5%99%C3%A1k)
     genres:
@@ -951,7 +983,7 @@ owned:
   - title: Nursery Cryme
     artist: Genesis
     released: '1971-11-12'
-    coverUrl: https://i.ebayimg.com/images/g/6LMAAOSwLG5gRjK-/s-l1600.jpg
+    coverUrl: https://www.udiscovermusic.com/wp-content/uploads/2017/05/Nursery-Cryme-1.jpg
     previewUrl: https://youtu.be/i4going_cOo
     wikiUrl: https://en.wikipedia.org/wiki/Nursery_Cryme
     genres:
@@ -1074,7 +1106,7 @@ owned:
   - title: Piano concerto No.2, Three Preludes
     artist: Sergei Rachmaninov
     released: '1900/1903/1910'
-    coverUrl: https://i.ebayimg.com/images/g/sqoAAOSwCGVX54a1/s-l500.jpg
+    coverUrl: https://uk.rarevinyl.com/cdn/shop/products/moura-lympany-rachmaninov-piano-concerto-no-2-three-preludes-uk-vinyl-lp-album-record-cfp167-525335.jpg?v=1684107815
     previewUrl: https://youtu.be/jTAqdVTASfA
     wikiUrl: https://en.wikipedia.org/wiki/Sergei_Rachmaninoff#Works
     genres:
@@ -1089,6 +1121,38 @@ owned:
         - title: Prelude in D Major Op.23 No.4
         - title: Prelude in G Major Op.32 No.5
         - title: Prelude in G Sharp Minor Op.32 No.12
+  - title: Pieces of Eight
+    artist: Styx
+    released: '1978-09-01'
+    coverUrl: https://m.media-amazon.com/images/I/510KEjqFOZL._UF1000,1000_QL80_.jpg
+    previewUrl: https://youtu.be/astDDt5OUYM
+    wikiUrl: https://en.wikipedia.org/wiki/Pieces_of_Eight
+    genres:
+      - progressive rock
+      - hard rock
+    sides:
+      - songs:
+        - title: Great White Hope
+          duration: '4:22'
+        - title: I'm O.K.
+          duration: '5:41'
+        - title: Sing for the Day
+          duration: '4:57'
+        - title: The Message
+          duration: '1:08'
+        - title: Lords of the Ring
+          duration: '4:33'
+      - songs:
+        - title: Blue Collar Man (Long Nights)
+          duration: '4:35'
+        - title: Queen of Spades
+          duration: '5:38'
+        - title: Renegade
+          duration: '4:16'
+        - title: Pieces of Eight
+          duration: '4:44'
+        - title: Aku-Aku
+          duration: '2:57'
   - title: Pretty. Odd.
     artist: Panic! at the Disco
     released: '2008-03-21'
@@ -1379,7 +1443,7 @@ owned:
   - title: The Best of the Alan Parsons Project
     artist: The Alan Parsons Project
     released: 'October 1983'
-    coverUrl: https://sun9-61.userapi.com/impf/c851336/v851336324/16d09b/PqinYXrUQGg.jpg?size=1406x1406&quality=96&sign=6b1c27012e2b1d60b69434e0838ae0a3&c_uniq_tag=oc58uXUVRyB1vgykXq8C2NxPlznfrTY3YglfEAkVLxk&type=album
+    coverUrl: https://lastfm.freetls.fastly.net/i/u/ar0/df8c3d43cbeefad1ebdbcb1f13d1170c.jpg
     previewUrl: https://youtu.be/Uzna8YoW7_k
     wikiUrl: https://en.wikipedia.org/wiki/The_Best_of_the_Alan_Parsons_Project_(1983_album)
     genres:
@@ -2419,37 +2483,6 @@ wishlist:
       - songs:
         - title: A Plague of Lighthouse Keepers
           duration: '23:04'
-  - title: Pieces of Eight
-    artist: Styx
-    released: '1978-09-01'
-    coverUrl: https://m.media-amazon.com/images/I/510KEjqFOZL._UF1000,1000_QL80_.jpg
-    wikiUrl: https://en.wikipedia.org/wiki/Pieces_of_Eight
-    genres:
-      - progressive rock
-      - hard rock
-    sides:
-      - songs:
-        - title: Great White Hope
-          duration: '4:22'
-        - title: I'm O.K.
-          duration: '5:41'
-        - title: Sing for the Day
-          duration: '4:57'
-        - title: The Message
-          duration: '1:08'
-        - title: Lords of the Ring
-          duration: '4:33'
-      - songs:
-        - title: Blue Collar Man (Long Nights)
-          duration: '4:35'
-        - title: Queen of Spades
-          duration: '5:38'
-        - title: Renegade
-          duration: '4:16'
-        - title: Pieces of Eight
-          duration: '4:44'
-        - title: Aku-Aku
-          duration: '2:57'
   - title: Rumours
     artist: Fleetwood Mac
     released: '1977-02-04'
@@ -2783,6 +2816,28 @@ wishlist:
           duration: '3:10'
         - title: European Son
           duration: '7:40'
+  - title: The Yes Album
+    artist: 'Yes'
+    released: '1971-02-19'
+    coverUrl: https://images.genius.com/814c01f2a11383551c640bbad5e69a6c.1000x1000x1.png
+    wikiUrl: https://en.wikipedia.org/wiki/The_Yes_Album
+    genres:
+      - progressive rock
+    sides:
+      - songs:
+        - title: Yours Is No Disgrace
+          duration: '9:40'
+        - title: Clap
+          duration: '3:16'
+        - title: Starship Trooper
+          duration: '9:29'
+      - songs:
+        - title: I've Seen All Good People
+          duration: '6:55'
+        - title: A Venture
+          duration: '3:20'
+        - title: Perpetual Change
+          duration: '8:57'
   - title: Trespass
     artist: Genesis
     released: '1970-10-23'
