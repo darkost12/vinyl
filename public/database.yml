@@ -776,6 +776,28 @@ owned:
           duration: '7:03'
         - title: Only Because of You
           duration: '8:40'
+  - title: Incantations
+    artist: Mike Oldfield
+    released: '1978-12-01'
+    coverUrl: https://www.progarchives.com/progressive_rock_discography_covers/839/cover_046151352016_r.jpg
+    previewUrl: https://youtu.be/15a4xFuYbqw
+    wikiUrl: https://en.wikipedia.org/wiki/Incantations_(album)
+    genres:
+      - progressive rock
+      - new-age
+    sides:
+      - songs:
+        - title: Incantations (Part One)
+          duration: '19:08'
+      - songs:
+        - title: Incantations (Part Two)
+          duration: '19:36'
+      - songs:
+        - title: Incantations (Part Three)
+          duration: '16:58'
+      - songs:
+        - title: Incantations (Part Four)
+          duration: '17:01'
   - title: Kill 'Em All
     artist: Metallica
     released: '1983-07-25'
@@ -1541,6 +1563,66 @@ owned:
           duration: '6:00'
         - title: The Grand Finale
           duration: '1:57'
+  - title: The Lamb Lies Down on Broadway
+    artist: Genesis
+    released: '1974-11-18'
+    coverUrl: https://upload.wikimedia.org/wikipedia/ru/thumb/3/3a/Genesis-LambLiesDownOnBroadway.jpg/640px-Genesis-LambLiesDownOnBroadway.jpg
+    previewUrl: https://youtu.be/qUiS_8-iUwI
+    wikiUrl: https://en.wikipedia.org/wiki/The_Lamb_Lies_Down_on_Broadway
+    genres:
+      - progressive rock
+      - art rock
+    sides:
+      - songs:
+        - title: The Lamb Lies Down on Broadway
+          duration: '4:52'
+        - title: Fly on a Windshield
+          duration: '2:45'
+        - title: Broadway Melody of 1974
+          duration: '2:11'
+        - title: Cuckoo Cocoon
+          duration: '2:12'
+        - title: In the Cage
+          duration: '8:13'
+        - title: The Grand Parade of Lifeless Packaging
+          duration: '2:49'
+      - songs:
+        - title: Back in N.Y.C.
+          duration: '5:46'
+        - title: Hairless Heart
+          duration: '2:10'
+        - title: Counting Out Time
+          duration: '3:42'
+        - title: The Carpet Crawlers
+          duration: '5:16'
+        - title: The Chamber of 32 Doors
+          duration: '5:46'
+      - songs:
+        - title: Lilywhite Lilith
+          duration: '2:50'
+        - title: The Waiting Room
+          duration: '5:18'
+        - title: Anyway
+          duration: '3:18'
+        - title: Here Comes the Supernatural Anaesthetist
+          duration: '2:50'
+        - title: The Lamia
+          duration: '6:58'
+        - title: Silent Sorrow in Empty Boats
+          duration: '3:02'
+      - songs:
+        - title: The Colony of Slippermen
+          duration: '8:20'
+        - title: Ravine
+          duration: '2:05'
+        - title: The Light Dies Down on Broadway
+          duration: '3:33'
+        - title: Riding the Scree
+          duration: '4:08'
+        - title: In the Rapids
+          duration: '2:23'
+        - title: It
+          duration: '4:20'
   - title: The Planets
     artist: Gustav Holst
     released: '1918-09-29'
@@ -2723,65 +2805,6 @@ wishlist:
           duration: '2:13'
         - title: The End
           duration: '11:35'
-  - title: The Lamb Lies Down on Broadway
-    artist: Genesis
-    released: '1974-11-18'
-    coverUrl: https://upload.wikimedia.org/wikipedia/ru/thumb/3/3a/Genesis-LambLiesDownOnBroadway.jpg/640px-Genesis-LambLiesDownOnBroadway.jpg
-    wikiUrl: https://en.wikipedia.org/wiki/The_Lamb_Lies_Down_on_Broadway
-    genres:
-      - progressive rock
-      - art rock
-    sides:
-      - songs:
-        - title: The Lamb Lies Down on Broadway
-          duration: '4:52'
-        - title: Fly on a Windshield
-          duration: '2:45'
-        - title: Broadway Melody of 1974
-          duration: '2:11'
-        - title: Cuckoo Cocoon
-          duration: '2:12'
-        - title: In the Cage
-          duration: '8:13'
-        - title: The Grand Parade of Lifeless Packaging
-          duration: '2:49'
-      - songs:
-        - title: Back in N.Y.C.
-          duration: '5:46'
-        - title: Hairless Heart
-          duration: '2:10'
-        - title: Counting Out Time
-          duration: '3:42'
-        - title: The Carpet Crawlers
-          duration: '5:16'
-        - title: The Chamber of 32 Doors
-          duration: '5:46'
-      - songs:
-        - title: Lilywhite Lilith
-          duration: '2:50'
-        - title: The Waiting Room
-          duration: '5:18'
-        - title: Anyway
-          duration: '3:18'
-        - title: Here Comes the Supernatural Anaesthetist
-          duration: '2:50'
-        - title: The Lamia
-          duration: '6:58'
-        - title: Silent Sorrow in Empty Boats
-          duration: '3:02'
-      - songs:
-        - title: The Colony of Slippermen
-          duration: '8:20'
-        - title: Ravine
-          duration: '2:05'
-        - title: The Light Dies Down on Broadway
-          duration: '3:33'
-        - title: Riding the Scree
-          duration: '4:08'
-        - title: In the Rapids
-          duration: '2:23'
-        - title: It
-          duration: '4:20'
   - title: The Velvet Underground & Nico
     artist: The Velvet Underground & Nico
     released: '1967-03-12'
