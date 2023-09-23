@@ -325,6 +325,38 @@ owned:
           duration: '3:28'
         - title: Down by the Sea
           duration: '6:53'
+  - title: Can't Buy a Thrill
+    artist: Steely Dan
+    released: '1972-11-27'
+    coverUrl: https://media.pitchfork.com/photos/5dc5d7873af4630009dbe6ab/1:1/w_600/can'tbuy.jpg
+    previewUrl: https://youtu.be/kR5Ki6jjPaY
+    wikiUrl: https://en.wikipedia.org/wiki/Can%27t_Buy_a_Thrill
+    genres:
+      - jazz rock
+      - soft rock
+    sides:
+      - songs:
+        - title: Do It Again
+          duration: '5:56'
+        - title: Dirty Work
+          duration: '3:08'
+        - title: Kings
+          duration: '3:45'
+        - title: Midnite Cruiser
+          duration: '4:07'
+        - title: Only a Fool Would Say That
+          duration: '2:57'
+      - songs:
+        - title: Reelin' In the Years
+          duration: '4:37'
+        - title: Fire in the Hole
+          duration: '3:28'
+        - title: Brooklyn (Owes the Charmer Under Me)
+          duration: '4:21'
+        - title: Change of the Guard
+          duration: '3:39'
+        - title: Turn That Heartbeat Over Again
+          duration: '4:58'
   - title: Close to the Edge
     artist: 'Yes'
     released: '1972-09-08'
@@ -2018,6 +2050,31 @@ wishlist:
           duration: '6:17'
         - title: King of Twilight
           duration: '4:27'
+  - title: Argus
+    artist: Wishbone Ash
+    released: '1972-04-28'
+    coverUrl: https://archive.org/services/img/wishbone-ash-1-time-was/full/pct:500/0/default.jpg
+    wikiUrl: https://en.wikipedia.org/wiki/Argus_(album)
+    genres:
+      - progressive rock
+      - hard rock
+    sides:
+      - songs:
+        - title: Time Was
+          duration: '9:42'
+        - title: Sometime World
+          duration: '6:55'
+        - title: Blowin' Free
+          duration: '5:17'
+      - songs:
+        - title: The King Will Come
+          duration: '7:06'
+        - title: Leaf and Stream
+          duration: '3:55'
+        - title: Warrior
+          duration: '5:53'
+        - title: Throw Down the Sword
+          duration: '5:55'
   - title: Black Sabbath
     artist: Black Sabbath
     released: '1970-02-13'
@@ -2042,37 +2099,6 @@ wishlist:
           duration: '3:46'
         - title: Warning
           duration: '10:28'
-  - title: Can't Buy a Thrill
-    artist: Steely Dan
-    released: '1972-11-27'
-    coverUrl: https://media.pitchfork.com/photos/5dc5d7873af4630009dbe6ab/1:1/w_600/can'tbuy.jpg
-    wikiUrl: https://en.wikipedia.org/wiki/Can%27t_Buy_a_Thrill
-    genres:
-      - jazz rock
-      - soft rock
-    sides:
-      - songs:
-        - title: Do It Again
-          duration: '5:56'
-        - title: Dirty Work
-          duration: '3:08'
-        - title: Kings
-          duration: '3:45'
-        - title: Midnite Cruiser
-          duration: '4:07'
-        - title: Only a Fool Would Say That
-          duration: '2:57'
-      - songs:
-        - title: Reelin' In the Years
-          duration: '4:37'
-        - title: Fire in the Hole
-          duration: '3:28'
-        - title: Brooklyn (Owes the Charmer Under Me)
-          duration: '4:21'
-        - title: Change of the Guard
-          duration: '3:39'
-        - title: Turn That Heartbeat Over Again
-          duration: '4:58'
   - title: Crystal Ball
     artist: Styx
     released: 'October 1976'
