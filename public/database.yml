@@ -2733,6 +2733,37 @@ wishlist:
           duration: '1:55'
         - title: Long Goodbyes
           duration: '5:08'
+  - title: Supertramp
+    artist: Supertramp
+    released: 'August 1970'
+    coverUrl: https://s.mxmcdn.net/images-storage/albums/6/0/2/0/9/5/26590206_800_800.jpg
+    wikiUrl: https://en.wikipedia.org/wiki/Supertramp_(album)
+    genres:
+      - progressive rock
+      - progressive pop
+    sides:
+      - songs:
+        - title: Surely
+          duration: '0:31'
+        - title: It's a Long Road
+          duration: '5:33'
+        - title: Aubade / And I Am Not Like Other Birds of Prey
+          duration: '5:17'
+        - title: Words Unspoken
+          duration: '3:59'
+        - title: Maybe I'm a Beggar
+          duration: '6:44'
+        - title: Home Again
+          duration: '1:15'
+      - songs:
+        - title: Nothing to Show
+          duration: '4:53'
+        - title: Shadow Song
+          duration: '4:23'
+        - title: Try Again
+          duration: '12:02'
+        - title: Surely
+          duration: '3:08'
   - title: Surrealistic Pillow
     artist: Jefferson Airplane
     released: '1967-02-01'
