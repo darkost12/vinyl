@@ -9,5 +9,4 @@ Improvements would be nice to have:
 2. Sorting by other parameters and orders;
 3. Maybe refine filtering logic (now querying intentionally overrides tab and genre filtering);
 4. Refine styling approach;
-5. Some button to pick random album to listen to;
-6. Skeletons when previews are loading.
+5. Hide search and genres select on mobile, moving it to some curtain menu.

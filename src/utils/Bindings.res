@@ -26,6 +26,10 @@ let setScrollTop: (Dom.element, int) => unit = %raw(`
   function(el, offset) { el.scrollTop = offset }
 `)
 
+let setOnLoad: (Dom.element, unit => unit) => unit = %raw(`
+  function(el, callback) { el.onload = callback }
+`)
+
 module History = {
   @val @scope(("window", "history"))
   external _pushState: (Js.Nullable.t<string>, Js.Nullable.t<string>, string) => unit = "pushState"

@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "compile": "rescript build -with-deps",
+    "watch": "rescript build -with-deps -w",
     "clean": "rescript clean -with-deps",
-    "watch": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\" --servedir=.",
+    "start": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\" --servedir=.",
     "bundle:dev": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --watch --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\"",
     "bundle": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --minify --bundle --outfile=dist/bundle.js"
   },
