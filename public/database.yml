@@ -1017,6 +1017,30 @@ owned:
           duration: '4:33'
         - title: White Feather
           duration: '2:24'
+  - title: Moonmadness
+    artist: Camel
+    released: '1976-03-26'
+    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/50/cover_15882072019_r.jpg
+    wikiUrl: https://en.wikipedia.org/wiki/Moonmadness
+    genres:
+      - progressive rock
+    sides:
+      - songs:
+        - title: Aristillus
+          duration: '1:56'
+        - title: Song Within a Song
+          duration: '7:16'
+        - title: Chord Change
+          duration: '6:45'
+        - title: Spirit of the Water
+          duration: '2:07'
+      - songs:
+        - title: Another Night
+          duration: '6:58'
+        - title: Air Born
+          duration: '5:02'
+        - title: Lunar Sea
+          duration: '9:11'
   - title: New World Symphony, Carnival Overture
     artist: Antonín Dvořák
     released: '1891/1893'
@@ -2446,30 +2470,6 @@ wishlist:
           duration: '2:38'
         - title: Wars of Armageddon
           duration: '9:42'
-  - title: Moonmadness
-    artist: Camel
-    released: '1976-03-26'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/50/cover_15882072019_r.jpg
-    wikiUrl: https://en.wikipedia.org/wiki/Moonmadness
-    genres:
-      - progressive rock
-    sides:
-      - songs:
-        - title: Aristillus
-          duration: '1:56'
-        - title: Song Within a Song
-          duration: '7:16'
-        - title: Chord Change
-          duration: '6:45'
-        - title: Spirit of the Water
-          duration: '2:07'
-      - songs:
-        - title: Another Night
-          duration: '6:58'
-        - title: Air Born
-          duration: '5:02'
-        - title: Lunar Sea
-          duration: '9:11'
   - title: Nightingales & Bombers
     artist: Manfred Mann's Earth Band
     released: '1975-08-22'
