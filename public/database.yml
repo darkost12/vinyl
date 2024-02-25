@@ -1592,6 +1592,40 @@ owned:
         - title: Eclipse
           duration: '2:12'
           rating: 10
+  - title: The Doors
+    artist: The Doors
+    released: '1967-01-04'
+    coverUrl: https://i.scdn.co/image/ab67616d0000b2735b96a8c5d61be8878452f8f1
+    previewUrl: https://www.youtube.com/watch?v=rbulIrN4scs
+    wikiUrl: https://en.wikipedia.org/wiki/The_Doors_(album)
+    genres:
+      - psychedelic rock
+      - art rock
+    sides:
+      - songs:
+        - title: Break On Through (To the Other Side)
+          duration: '2:25'
+        - title: Soul Kitchen
+          duration: '3:30'
+        - title: The Crystal Ship
+          duration: '2:30'
+        - title: Twentieth Century Fox
+          duration: '2:30'
+        - title: Alabama Song (Whisky Bar)
+          duration: '3:15'
+        - title: Light My Fire
+          duration: '6:50'
+      - songs:
+        - title: Back Door Man
+          duration: '3:30'
+        - title: I Looked at You
+          duration: '2:18'
+        - title: End of the Night
+          duration: '2:49'
+        - title: Take It as It Comes
+          duration: '2:13'
+        - title: The End
+          duration: '11:35'
   - title: The Grand Illusion
     artist: Styx
     released: '1977-07-07'
@@ -2830,39 +2864,6 @@ wishlist:
           duration: '5:14'
         - title: High Hopes
           duration: '8:31'
-  - title: The Doors
-    artist: The Doors
-    released: '1967-01-04'
-    coverUrl: https://i.scdn.co/image/ab67616d0000b2735b96a8c5d61be8878452f8f1
-    wikiUrl: https://en.wikipedia.org/wiki/The_Doors_(album)
-    genres:
-      - psychedelic rock
-      - art rock
-    sides:
-      - songs:
-        - title: Break On Through (To the Other Side)
-          duration: '2:25'
-        - title: Soul Kitchen
-          duration: '3:30'
-        - title: The Crystal Ship
-          duration: '2:30'
-        - title: Twentieth Century Fox
-          duration: '2:30'
-        - title: Alabama Song (Whisky Bar)
-          duration: '3:15'
-        - title: Light My Fire
-          duration: '6:50'
-      - songs:
-        - title: Back Door Man
-          duration: '3:30'
-        - title: I Looked at You
-          duration: '2:18'
-        - title: End of the Night
-          duration: '2:49'
-        - title: Take It as It Comes
-          duration: '2:13'
-        - title: The End
-          duration: '11:35'
   - title: The Velvet Underground & Nico
     artist: The Velvet Underground & Nico
     released: '1967-03-12'
