@@ -53,10 +53,6 @@ a {
   display: none;
 }
 
-div.fixed {
-  position: fixed;
-}
-
 div.tabs-menu {
   position: absolute;
   width: -webkit-fill-available;
@@ -64,7 +60,7 @@ div.tabs-menu {
 }
 
 button.MuiTab-textColorInherit.Mui-selected.faded {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 div.info-container {
@@ -153,41 +149,37 @@ li.MuiImageListItem-root {
   aspect-ratio: 1/1;
 }
 
-div.MuiImageListItem-item {
+li.MuiImageListItem-root div.MuiBox-root {
   width: 80%;
   height: 80%;
-  margin: 10% 10%;
+  margin: 10%;
   display: flex;
 }
 
 img.thumbnail {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  height: 80%;
+  width: 80%;
   margin: auto;
   position: absolute;
   border-radius: 5%;
 }
 
-div.MuiImageListItem-item:not(:hover) {
+li.MuiImageListItem-root:not(:hover) {
   transform: scale(1);
   transition: 1s;
 }
 
-div.MuiImageListItem-item:not(:hover) img.greyscale {
+li.MuiImageListItem-root:not(:hover) img.greyscale {
   filter: grayscale(100%);
   transition: 1s;
 }
 
-div.MuiImageListItem-item:hover {
+li.MuiImageListItem-root:hover {
   transform: scale(1.05);
   transition: 1s;
 }
 
-div.MuiImageListItem-item:hover img.greyscale {
+li.MuiImageListItem-root:hover img.greyscale {
   filter: grayscale(0%);
   transition: 1s;
 }
@@ -296,6 +288,7 @@ div[role=presentation]>div {
 .info-song {
   display: grid;
   grid-template-columns: 2fr 11fr 3fr;
+  padding-top: 10px;
 }
 
 .song-duration {
@@ -335,11 +328,15 @@ div[role=presentation]>div {
   background-size: 800% 100%;
   border-radius: 5%;
   background-image: linear-gradient(90deg, #ececec 21%, #bbbbbb 25%, #ececec 29%);
-  animation: wave 3s linear infinite;
+  animation: wave 1.5s linear infinite;
 }
 
 .loading {
   opacity: 0;
+}
+
+.MuiDrawer-paper {
+  width: 100%;
 }
 
 @keyframes wave {

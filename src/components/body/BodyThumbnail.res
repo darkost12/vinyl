@@ -26,7 +26,7 @@ let make = (~greyscale=false, ~album: Types.Album.t) => {
     }
   )
 
-  <B height={bStr("100%")} width={bStr("100%")}>
+  <B height={bStr("80%")} width={bStr("80%")}>
     {<>
       {loading ? <Skeleton /> : React.null}
       <img

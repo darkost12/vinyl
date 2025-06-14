@@ -1,4 +1,3 @@
 module B = Mui.Box
-let bStr = Mui.Box.Value.string
-let bInt = Mui.Box.Value.int
-let bColor = Mui.Box.Value.paletteColor
+let bStr = v => Mui.System.Value.String(v)
+let bNum = v => Mui.System.Value.Number(v)

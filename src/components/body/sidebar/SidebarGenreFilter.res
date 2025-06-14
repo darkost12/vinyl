@@ -8,7 +8,7 @@ let defineGenres = (activeTab, plates: Plates.t) =>
   }->Types.Genres.extract
 
 @react.component
-let make = (~plates: Types.Plates.t) => {
+let make = (~plates: Plates.t) => {
   let ({genres, query, activeTab}: StateTypes.State.t, dispatch) = State.use()
   let (knownGenres, setKnownGenres) = React.useState(() => defineGenres(activeTab, plates))
 
@@ -42,8 +42,9 @@ let make = (~plates: Types.Plates.t) => {
         key={genre}
         label={React.string(genre)}
         control={<Mui.Checkbox
-          onChange={e => onChange(ReactEvent.Form.target(e)["checked"], genre)}
+          onChange={(e, _) => onChange(ReactEvent.Form.target(e)["checked"], genre)}
           disabled={query != ""}
+          color={Success}
           checked={query == "" && Array.getBy(genres, g => g == genre) != None}
         />}
       />

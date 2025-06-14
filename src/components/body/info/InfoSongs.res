@@ -5,16 +5,16 @@ let make = (~album: Types.Album.t) => {
   let previousSidesSongs = ref(0)
   <B className={"info-songs"}>
     {album.sides
-    ->Array.mapWithIndex((sideIdx, side) => {
-      let sideIdxString = Int.toString(sideIdx)
+    ->Array.mapWithIndex((side, sideIdx) => {
+      let sideIdxString = Js.Int.toString(sideIdx)
 
       <B className="info-side" key={album.title ++ sideIdxString}>
         <span key={"side-number-" ++ sideIdxString} className={"side-number"}>
           {React.string("Side " ++ Js.String2.fromCharCode(sideIdx + 65))}
         </span>
         {
-          let sideSongs = side.songs->Array.mapWithIndex((i, track) =>
-            <B key={track.title ++ Int.toString(i)} className={"info-song"}>
+          let sideSongs = side.songs->Array.mapWithIndex((track, i) =>
+            <B className={"info-song"} key={track.title ++ Js.Int.toString(i)}>
               <span className={"song-index"}>
                 {React.string(Js.Int.toString(i + previousSidesSongs.contents + 1) ++ ".")}
               </span>

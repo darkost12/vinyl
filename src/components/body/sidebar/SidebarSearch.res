@@ -6,8 +6,8 @@ let make = () => {
   let handleChange = value => dispatch(QueryChanged(Option.getWithDefault(value, "")))
 
   <Input
-    value={Any.fromString(query)}
-    inputProps={{"spellCheck": "false"}}
+    value={query}
+    spellCheck={false}
     startAdornment={React.string("\xa0🔍\xa0")}
     className="search-bar"
     disableUnderline=true

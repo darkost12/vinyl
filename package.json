@@ -1,29 +1,37 @@
 {
   "name": "vinyl",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "compile": "rescript build -with-deps",
     "watch": "rescript build -with-deps -w",
     "clean": "rescript clean -with-deps",
-    "start": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\" --servedir=.",
-    "bundle:dev": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --watch --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\"",
-    "bundle": "cp -pR public/* dist/ && node './lib/es6/src/utils/Yml.mjs' && esbuild lib/es6/src/Index.mjs --minify --bundle --outfile=dist/bundle.js"
+    "dist": "cp -pR public/* dist/ && yaml2json dist/database.yml > dist/database.json",
+    "server": "esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\" --servedir=.",
+    "dev": "npm run dist && concurrently --names 'rescript,server' -c 'cyan.bold,magenta.bold' 'npm run watch' 'npm run server'",
+    "bundle:dev": "npm run dist && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --watch --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\"",
+    "bundle": "npm run dist && esbuild lib/es6/src/Index.mjs --minify --bundle --outfile=dist/bundle.js"
   },
   "description": "My vinyl showcase",
   "repository": "https://github.com/darkost12/vinyl",
   "author": "darkost12",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@rescript/react": "0.11",
-    "js-yaml": "^4.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rescript-json": "^1.0.6",
-    "rescript-material-ui": "^3.0.2"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@glennsl/rescript-json-combinators": "^1.4.0",
+    "@mui/material": "^7.1.1",
+    "@rescript-mui/material": "^5.1.2",
+    "@rescript/core": "^1.6.1",
+    "@rescript/react": "^0.13.1",
+    "core-js": "^3.43.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rescript-nodejs": "^16.1.0",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "esbuild": "^0.15.13",
-    "rescript": "10.1"
+    "concurrently": "^9.1.2",
+    "esbuild": "^0.25.5",
+    "rescript": "^11.1.4"
   }
 }

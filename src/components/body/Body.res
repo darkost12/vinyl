@@ -29,11 +29,10 @@ let make = (~plates: Types.Plates.t, ~scrollableRef) => {
       mapWithType(plates.wishlist, Wishlist),
     )->Array.keep(({album}) => {
       Array.some(
-        Array.concatMany([
+        Array.concatMany(
           [album.artist, album.title, Types.ReleaseDate.toString(album.released)],
-          album.genres,
-          Array.flatMap(album.sides, s => Array.map(s.songs, song => song.title)),
-        ]),
+          [album.genres, Array.flatMap(album.sides, s => Array.map(s.songs, song => song.title))],
+        ),
         s => Js.String2.includes(Js.String2.toLowerCase(s), Js.String2.toLowerCase(input)),
       )
     })
@@ -41,18 +40,18 @@ let make = (~plates: Types.Plates.t, ~scrollableRef) => {
 
   <B minHeight={bStr("100%")} paddingTop={bStr("70px")} display={bStr("flex")}>
     <B
-      bgcolor={bColor(#"primary.main")}
+      bgcolor={PrimaryMain}
       display={bStr("flex")}
       flexDirection={bStr("column")}
-      flexGrow={bInt(1)}
+      flexGrow={bNum(1.0)}
       paddingBottom={bStr("70px")}
       height={bStr("100%")}
       width={bStr("100%")}
-      className={"fixed"}>
+      position={bStr("fixed")}>
       <B
-        bgcolor={bColor(#"secondary.main")}
+        bgcolor={SecondaryMain}
         width={bStr("-webkit-fill-available;")}
-        flexGrow={bInt(1)}
+        flexGrow={bNum(1.0)}
         overflow={bStr("scroll")}
         margin={bStr("0 max(15%, 114px);")}
         ref={ReactDOM.Ref.domRef(scrollableRef)}>
