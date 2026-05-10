@@ -47,7 +47,7 @@ let make = (~album: Types.Album.t) => {
   <Drawer
     className={"drawer"}
     anchor=Left
-    transitionDuration={Mui.Transition.Time(750)}
+    transitionDuration={Mui.Transition.Time(250)}
     open_=opened
     onClose={onEsc}>
     <BackButton closing={highlighted == None} onClick={onClose} />

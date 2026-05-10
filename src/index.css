@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   box-sizing: border-box;
-  scrollbar-width: none
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
@@ -19,10 +19,10 @@ body,
 }
 
 html {
-  --primary-main-color: #93BFCF;
-  --primary-dark-color: #6096B4;
-  --secondary-main-color: #BDCDD6;
-  --secondary-light-color: #FFEBB7;
+  --primary-main-color: #93bfcf;
+  --primary-dark-color: #6096b4;
+  --secondary-main-color: #bdcdd6;
+  --secondary-light-color: #ffebb7;
   background-color: var(--primary-dark-color);
   height: -webkit-fill-available;
   width: 100vw;
@@ -93,10 +93,10 @@ label.checkbox-container span.MuiFormControlLabel-label {
 }
 
 div.tabs-menu div div button.MuiButtonBase-root {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  background-color: #E08300;
+  background-color: #e08300;
   border-width: 0px;
   width: 50%;
   max-width: -webkit-fill-available;
@@ -122,10 +122,8 @@ div.tabs-menu div div button.MuiButtonBase-root.right {
   }
 
   .info-miniature {
-    width: -moz-available;
-    height: -moz-available;
-    max-width: -moz-available;
-    max-height: -moz-available;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -202,7 +200,7 @@ span.scroll-top {
   margin-top: 3px;
 }
 
-div[role=presentation]>div {
+div[role='presentation'] > div {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -220,27 +218,27 @@ div[role=presentation]>div {
 
 .info-header {
   display: grid;
-  height: 50%;
+  height: 100%;
   padding-top: 5%;
   grid-template-columns: 3fr 3fr;
   width: 100%;
 }
 
 .info-miniature-container {
-  display: flex;
-  overflow: hidden;
-  margin: auto 0;
-  padding-left: 10%;
-  justify-content: flex-end;
-  align-items: center;
+  position: relative;
+  aspect-ratio: 1/1;
+  margin: auto;
+  width: 80%;
+  height: auto;
 }
 
 .info-miniature {
-  max-width: -webkit-fill-available;
-  max-height: -webkit-fill-available;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
   border-radius: 5%;
 }
 
@@ -253,11 +251,11 @@ div[role=presentation]>div {
 .info-gist,
 .info-song,
 .side-number {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.00938em;
-  color: var(--secondary-light-color)
+  color: var(--secondary-light-color);
 }
 
 .info-title {
@@ -296,7 +294,7 @@ div[role=presentation]>div {
 }
 
 .nothing {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   margin-top: 25%;
@@ -327,7 +325,12 @@ div[role=presentation]>div {
   height: 100%;
   background-size: 800% 100%;
   border-radius: 5%;
-  background-image: linear-gradient(90deg, #ececec 21%, #bbbbbb 25%, #ececec 29%);
+  background-image: linear-gradient(
+    90deg,
+    #ececec 21%,
+    #bbbbbb 25%,
+    #ececec 29%
+  );
   animation: wave 1.5s linear infinite;
 }
 
@@ -400,8 +403,8 @@ div[role=presentation]>div {
   z-index: 1;
 }
 
-.info-preview-tonearm:hover+.info-preview,
-.info-preview-container:hover>.info-preview {
+.info-preview-tonearm:hover + .info-preview,
+.info-preview-container:hover > .info-preview {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   animation-play-state: running;
