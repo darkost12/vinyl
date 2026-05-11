@@ -1,16 +1,14 @@
 {
   "name": "vinyl",
-  "bsc-flags": [
+  "compiler-flags": [
     "-bs-no-version-header",
-    "-bs-super-errors",
     "-open JsonCombinators",
     "-open RCore"
   ],
   "jsx": {
-    "version": 4,
-    "mode": "classic"
+    "version": 4
   },
-  "bs-dependencies": [
+  "dependencies": [
     "@glennsl/rescript-json-combinators",
     "@rescript/react",
     "@rescript/core",

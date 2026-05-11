@@ -5,3 +5,4 @@
 !/dist/.gitkeep
 .vercel
 .lock
+*.mjs

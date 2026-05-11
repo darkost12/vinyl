@@ -2,14 +2,14 @@
   "name": "vinyl",
   "version": "1.0.0",
   "scripts": {
-    "compile": "rescript build -with-deps",
-    "watch": "rescript build -with-deps -w",
-    "clean": "rescript clean -with-deps",
+    "compile": "rescript build",
+    "watch": "rescript build -w",
+    "clean": "rescript clean",
     "dist": "cp -pR public/* dist/ && yaml2json dist/database.yml > dist/database.json",
-    "server": "esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\" --servedir=.",
+    "server": "esbuild lib/bs/src/Index.mjs --bundle --outfile=dist/bundle.js --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\" --servedir=.",
     "dev": "npm run dist && concurrently --names 'rescript,server' -c 'cyan.bold,magenta.bold' 'npm run watch' 'npm run server'",
-    "bundle:dev": "npm run dist && esbuild lib/es6/src/Index.mjs --bundle --outfile=dist/bundle.js --watch --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\"",
-    "bundle": "npm run dist && esbuild lib/es6/src/Index.mjs --minify --bundle --outfile=dist/bundle.js"
+    "bundle:dev": "npm run dist && esbuild lib/bs/src/Index.mjs --bundle --outfile=dist/bundle.js --watch --platform=node --format=iife --define:process.env.NODE_ENV=\\\"development\\\"",
+    "bundle": "npm run dist && esbuild lib/bs/src/Index.mjs --minify --bundle --outfile=dist/bundle.js"
   },
   "description": "My vinyl showcase",
   "repository": "https://github.com/darkost12/vinyl",
@@ -18,7 +18,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@glennsl/rescript-json-combinators": "^1.4.0",
+    "@glennsl/rescript-json-combinators": "^1.5.1",
     "@mui/material": "^7.1.1",
     "@rescript-mui/material": "^5.1.2",
     "@rescript/core": "^1.6.1",
@@ -32,6 +32,6 @@
   "devDependencies": {
     "concurrently": "^9.1.2",
     "esbuild": "^0.25.5",
-    "rescript": "^11.1.4"
+    "rescript": "^12.2.0"
   }
 }
