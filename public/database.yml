@@ -2,7 +2,7 @@ owned:
   - title: ...Famous Last Words...
     artist: Supertramp
     released: '1982-10-29'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/324/cover_27614852016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/sflw.webp
     previewUrl: https://youtu.be/9F8KKBBKs8U
     wikiUrl: https://en.wikipedia.org/wiki/...Famous_Last_Words...
     genres:
@@ -96,7 +96,7 @@ owned:
   - title: A Trick of the Tail
     artist: Genesis
     released: '1976-02-13'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/1/cover_5225151742016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/gatoft.jpg
     previewUrl: https://youtu.be/UkVY3lJsBAA
     wikiUrl: https://en.wikipedia.org/wiki/A_Trick_of_the_Tail
     genres:
@@ -438,7 +438,7 @@ owned:
   - title: Crisis? What Crisis?
     artist: Supertramp
     released: '1975-11-29'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/324/cover_394311852016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/scwc.jpg
     previewUrl: https://youtu.be/JxitfwacCrk
     wikiUrl: https://en.wikipedia.org/wiki/Crisis%3F_What_Crisis%3F
     genres:
@@ -543,7 +543,7 @@ owned:
   - title: Even in the Quietest Moments...
     artist: Supertramp
     released: '1977-03-04'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/324/cover_33013852016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/seitqm.jpeg
     previewUrl: https://youtu.be/2IVf1K6tjPA
     wikiUrl: https://en.wikipedia.org/wiki/Even_in_the_Quietest_Moments...
     genres:
@@ -626,7 +626,7 @@ owned:
   - title: Fugazi
     artist: Marillion
     released: '1984-03-12'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/233/cover_18291617102008.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/mf.jpg
     previewUrl: https://youtu.be/q6XsqBgFQ70
     wikiUrl: https://en.wikipedia.org/wiki/Fugazi_(album)
     genres:
@@ -652,7 +652,7 @@ owned:
   - title: Gaudi
     artist: The Alan Parsons Project
     released: 'January 1987'
-    coverUrl: https://www.progarchives.com/progressive_rock_discography_covers/286/cover_455316832017_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/tappg.jpg
     previewUrl: https://youtu.be/ggijVDI6h_0
     wikiUrl: https://en.wikipedia.org/wiki/Gaudi_(The_Alan_Parsons_Project_album)
     genres:
@@ -715,7 +715,7 @@ owned:
   - title: Hergest Ridge
     artist: Mike Oldfield
     released: '1974-08-28'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/839/cover_72491352016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/mohr.webp
     previewUrl: https://youtu.be/ZJWW6shX8PI
     wikiUrl: https://en.wikipedia.org/wiki/Hergest_Ridge_(album)
     genres:
@@ -784,7 +784,7 @@ owned:
   - title: In the Eye of the Storm
     artist: Roger Hodgson
     released: 'October 1984'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/780/cover_4333414112019_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/rhiteots.jpg
     previewUrl: https://youtu.be/IE5SwypNrDM
     wikiUrl: https://en.wikipedia.org/wiki/In_the_Eye_of_the_Storm_(Roger_Hodgson_album)
     genres:
@@ -811,7 +811,7 @@ owned:
   - title: Incantations
     artist: Mike Oldfield
     released: '1978-12-01'
-    coverUrl: https://www.progarchives.com/progressive_rock_discography_covers/839/cover_046151352016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/moi.jpg
     previewUrl: https://youtu.be/15a4xFuYbqw
     wikiUrl: https://en.wikipedia.org/wiki/Incantations_(album)
     genres:
@@ -1020,7 +1020,7 @@ owned:
   - title: Moonmadness
     artist: Camel
     released: '1976-03-26'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/50/cover_15882072019_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/cm.webp
     previewUrl: https://youtu.be/KNJGkyCqtTU
     wikiUrl: https://en.wikipedia.org/wiki/Moonmadness
     genres:
@@ -1183,9 +1183,9 @@ owned:
         - title: Rape of the Bride
         - title: Solvejg's Song
   - title: Piano concerto No.2, Three Preludes
-    artist: Sergei Rachmaninov
+    artist: Sergei Rachmaninov, Moura Lympany
     released: '1900/1903/1910'
-    coverUrl: https://uk.rarevinyl.com/cdn/shop/products/moura-lympany-rachmaninov-piano-concerto-no-2-three-preludes-uk-vinyl-lp-album-record-cfp167-525335.jpg?v=1684107815
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/rlpc2tp.jpg
     previewUrl: https://youtu.be/jTAqdVTASfA
     wikiUrl: https://en.wikipedia.org/wiki/Sergei_Rachmaninoff#Works
     genres:
@@ -1497,7 +1497,7 @@ owned:
   - title: Tarkus
     artist: Emerson, Lake & Palmer
     released: '1971-07-14'
-    coverUrl: https://music-ark.ru/upload/iblock/4b7/4b7e6d9512be3b286c2fd25ad31669a5.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/elpt.webp
     previewUrl: https://youtu.be/QQ1Zo6faTQY
     wikiUrl: https://en.wikipedia.org/wiki/Tarkus
     genres:
@@ -1657,7 +1657,7 @@ owned:
   - title: The Lamb Lies Down on Broadway
     artist: Genesis
     released: '1974-11-18'
-    coverUrl: https://upload.wikimedia.org/wikipedia/ru/thumb/3/3a/Genesis-LambLiesDownOnBroadway.jpg/640px-Genesis-LambLiesDownOnBroadway.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/gtlldob.jpg
     previewUrl: https://youtu.be/qUiS_8-iUwI
     wikiUrl: https://en.wikipedia.org/wiki/The_Lamb_Lies_Down_on_Broadway
     genres:
@@ -1743,7 +1743,7 @@ owned:
   - title: The Snow Goose
     artist: Camel
     released: 'April 1975'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/50/cover_5425172642016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/ctsg.jpg
     previewUrl: https://youtu.be/_J0drGQJHjY
     wikiUrl: https://en.wikipedia.org/wiki/The_Snow_Goose_(album)
     genres:
@@ -2092,7 +2092,7 @@ wishlist:
   - title: A Tab in the Ocean
     artist: Nektar
     released: 'November 1972'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/549/cover_415551192016_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/natito.jpg
     wikiUrl: https://en.wikipedia.org/wiki/A_Tab_in_the_Ocean
     genres:
       - progressive rock
@@ -2351,7 +2351,7 @@ wishlist:
   - title: Heaven and Hell
     artist: Black Sabbath
     released: '1980-04-18'
-    coverUrl: https://www.revolvermag.com/sites/default/files/styles/original_image__844px_x_473px_/public/media/section-media/screen_shot_2017-08-14_at_11.48.00_am.png?itok=kuNH9JuU&timestamp=1508360630
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/bshah.jpeg
     wikiUrl: https://en.wikipedia.org/wiki/Heaven_and_Hell_(Black_Sabbath_album)
     genres:
       - heavy metal
@@ -2690,7 +2690,7 @@ wishlist:
   - title: Spin
     artist: Spin
     released: '1976'
-    coverUrl: http://www.progarchives.com/progressive_rock_discography_covers/4287/cover_4635102462019_r.jpg
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/ss.jpg
     genres:
       - jazz rock
       - jazz funk
