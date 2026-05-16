@@ -53,7 +53,7 @@ let make = (~plates: Types.Plates.t, ~scrollableRef) => {
         width={bStr("-webkit-fill-available;")}
         flexGrow={bNum(1.0)}
         overflow={bStr("scroll")}
-        margin={bStr("0 max(15%, 114px);")}
+        className="content-scroll-area"
         ref={ReactDOM.Ref.domRef(scrollableRef)}>
         {if Array.length(displayedPlates) == 0 {
           <BodyNothingFound />

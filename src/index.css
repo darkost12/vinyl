@@ -56,7 +56,124 @@ a {
 div.tabs-menu {
   position: absolute;
   width: -webkit-fill-available;
-  margin: 0 max(15%, 114px);
+}
+
+.tabs-menu div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sidebar-toggle-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  line-height: 1;
+  position: absolute;
+  left: 12px;
+  z-index: 1;
+}
+
+.sidebar-toggle-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-toggle-icon {
+  vertical-align: bottom;
+}
+
+/* Sidebar: fixed width on both desktop and mobile — no width change at breakpoint = no jump */
+.sidebar-drawer {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 200px;
+  height: calc(100% - 70px);
+  background-color: var(--primary-main-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+  div.tabs-menu {
+    margin-left: 200px;
+  }
+
+  .sidebar-toggle-button {
+    display: none;
+  }
+
+  .sidebar-drawer {
+    z-index: 2;
+  }
+
+  .sidebar-backdrop {
+    display: none;
+  }
+
+  .content-scroll-area {
+    margin-left: 200px;
+  }
+
+  div.tabs-menu div div.MuiTabs-flexContainer {
+    gap: 10%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  div.tabs-menu {
+    margin: 0 5%;
+  }
+
+  .sidebar-toggle-button {
+    display: block;
+  }
+
+  .sidebar-drawer {
+    transform: translateX(-100%);
+    z-index: 3;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .sidebar-drawer.sidebar-drawer-open {
+    transform: translateX(0);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebar-backdrop.sidebar-backdrop-visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .content-scroll-area {
+    margin: 0;
+  }
+
+  div.tabs-menu div div.MuiTabs-flexContainer {
+    gap: 25%;
+  }
 }
 
 button.MuiTab-textColorInherit.Mui-selected.faded {
@@ -98,18 +215,9 @@ div.tabs-menu div div button.MuiButtonBase-root {
   font-size: 0.9rem;
   background-color: #e08300;
   border-width: 0px;
-  width: 50%;
+  border-radius: 40px;
+  flex: 1;
   max-width: -webkit-fill-available;
-}
-
-div.tabs-menu div div button.MuiButtonBase-root.left {
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-}
-
-div.tabs-menu div div button.MuiButtonBase-root.right {
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
 @supports (max-width: -moz-available) {
@@ -184,20 +292,17 @@ li.MuiImageListItem-root:hover img.greyscale {
 
 div.scroll-top-container {
   position: fixed;
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   bottom: 40px;
   right: 40px;
   border-radius: 20px;
   background: var(--primary-dark-color);
-}
-
-span.scroll-top {
-  display: block;
-  text-align: center;
-  font-size: 40px;
-  margin-top: 3px;
+  color: var(--secondary-light-color);
+  cursor: pointer;
 }
 
 div[role='presentation'] > div {

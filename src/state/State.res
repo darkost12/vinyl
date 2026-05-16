@@ -13,6 +13,7 @@ let reducer = (state: State.t, action: Action.t) => {
   | GenresChanged(genres) => {...state, genres}
   | HighlightedChanged(highlighted) => {...state, highlighted}
   | LastVisitedChanged(lastVisited) => {...state, lastVisited}
+  | SidebarToggled => {...state, sidebarOpen: !state.sidebarOpen}
   }
 }
 

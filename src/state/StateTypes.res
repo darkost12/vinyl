@@ -5,6 +5,7 @@ module State = {
     genres: array<string>,
     highlighted: option<Types.Album.t>,
     lastVisited: option<Types.Album.t>,
+    sidebarOpen: bool,
   }
 
   let activeTab = ({activeTab}) => activeTab
@@ -13,7 +14,7 @@ module State = {
   let genres = ({genres}) => genres
   let lastVisited = ({lastVisited}) => lastVisited
 
-  let initial = {activeTab: Owned, query: "", genres: [], highlighted: None, lastVisited: None}
+  let initial = {activeTab: Owned, query: "", genres: [], highlighted: None, lastVisited: None, sidebarOpen: false}
 }
 
 module Action = {
@@ -23,4 +24,5 @@ module Action = {
     | GenresChanged(array<string>)
     | HighlightedChanged(option<Types.Album.t>)
     | LastVisitedChanged(option<Types.Album.t>)
+    | SidebarToggled
 }

@@ -5,7 +5,11 @@ module BackButton = {
   @react.component
   let make = (~onClick, ~closing) => {
     let className = "info-back-button no-select" ++ (closing ? " disabled" : "")
-    <button onClick className> {React.string("<")} </button>
+    <button onClick className>
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
   }
 }
 
