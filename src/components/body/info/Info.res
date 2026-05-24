@@ -6,7 +6,16 @@ module BackButton = {
   let make = (~onClick, ~closing) => {
     let className = "info-back-button no-select" ++ (closing ? " disabled" : "")
     <button onClick className>
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <polyline points="15 18 9 12 15 6" />
       </svg>
     </button>
@@ -19,9 +28,23 @@ module PreviewLink = {
     switch url {
     | Some(url) =>
       <a href=url target="_blank">
-        <B className={"info-preview-container"}>
+        <B className={"info-link-container"}>
           <img className={"info-preview-tonearm no-select"} src={"dist/tonearm.png"} />
           <img className={"info-preview no-select"} src={"dist/plate.png"} />
+        </B>
+      </a>
+    | None => React.null
+    }
+}
+
+module WikiLink = {
+  @react.component
+  let make = (~url) =>
+    switch url {
+    | Some(url) =>
+      <a href=url target="_blank">
+        <B className={"info-link-container"}>
+          <img className={"info-wiki no-select"} src={"dist/wiki.webp"} />
         </B>
       </a>
     | None => React.null
@@ -53,10 +76,14 @@ let make = (~album: Types.Album.t) => {
     anchor=Left
     transitionDuration={Mui.Transition.Time(250)}
     open_=opened
-    onClose={onEsc}>
+    onClose={onEsc}
+  >
     <BackButton closing={highlighted == None} onClick={onClose} />
     <B height={bStr("auto")} width={bStr("100%")}>
-      <PreviewLink url=album.previewUrl />
+      <B className={"links"} display={bStr("flex")} flexDirection={bStr("column")}>
+        <PreviewLink url=album.previewUrl />
+        <WikiLink url=album.wikiUrl />
+      </B>
       <B className={"info-container"}>
         <InfoHeader album />
         <InfoSongs album />

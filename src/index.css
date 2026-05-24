@@ -416,13 +416,19 @@ div[role='presentation'] > div {
   transform: none !important;
 }
 
-.info-preview-container {
+.links {
   position: absolute;
+  margin: 15vh auto 0 calc(85% - 40px);
+  width: 80px;
+  gap: 15px;
+}
+
+.info-link-container {
   background-color: var(--secondary-main-color);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  width: 15%;
-  margin: 15vh auto 0 73%;
+  height: 70px;
+  position: relative;
 }
 
 .skeleton {
@@ -457,8 +463,8 @@ div[role='presentation'] > div {
   }
 }
 
-.info-preview-container:hover {
-  transform: translate(10%, 0);
+.info-link-container:hover {
+  transform: translate(15%, 0);
 }
 
 @-moz-keyframes spin {
@@ -482,9 +488,10 @@ div[role='presentation'] > div {
 
 .info-preview {
   position: absolute;
-  height: 80%;
-  right: 0;
-  margin: 6% 7% 0 0;
+  height: 56px;
+  width: 56px;
+  right: 16px;
+  top: calc(50% - 28px);
   z-index: 0;
   animation: spin 1.5s linear infinite forwards;
   -webkit-animation: spin 1.5s linear infinite forwards;
@@ -494,6 +501,15 @@ div[role='presentation'] > div {
   -moz-animation-play-state: paused;
 }
 
+.info-wiki {
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  right: 9px;
+  top: calc(50% - 28px);
+  z-index: 0;
+}
+
 .info-preview:hover {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
@@ -501,15 +517,16 @@ div[role='presentation'] > div {
 }
 
 .info-preview-tonearm {
-  position: relative;
+  position: absolute;
   transform: rotate(10deg);
-  margin: 4% 5% auto 82%;
-  width: 12%;
+  width: 22px;
+  right: 12px;
+  top: 3px;
   z-index: 1;
 }
 
 .info-preview-tonearm:hover + .info-preview,
-.info-preview-container:hover > .info-preview {
+.info-link-container:hover > .info-preview {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   animation-play-state: running;
