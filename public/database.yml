@@ -202,6 +202,31 @@ owned:
           duration: '5:22'
         - title: Alan's Psychedelic Breakfast
           duration: '13:00'
+  - title: Black Sabbath
+    artist: Black Sabbath
+    released: '1970-02-13'
+    coverUrl: https://upload.wikimedia.org/wikipedia/ru/8/8e/Black_Sabbath_debut.jpg
+    previewUrl: https://youtu.be/G3YVFGNQPCI
+    wikiUrl: https://en.wikipedia.org/wiki/Black_Sabbath_(album)
+    genres:
+      - heavy metal
+    sides:
+      - songs:
+        - title: Black Sabbath
+          duration: '6:20'
+        - title: The Wizard
+          duration: '4:24'
+        - title: Behind the Wall of Sleep
+          duration: '3:37'
+        - title: N.I.B.
+          duration: '6:08'
+      - songs:
+        - title: Evil Woman
+          duration: '3:25'
+        - title: Sleeping Village
+          duration: '3:46'
+        - title: Warning
+          duration: '10:28'
   - title: Brain Salad Surgery
     artist: Emerson, Lake & Palmer
     released: '1973-11-19'
@@ -470,7 +495,7 @@ owned:
   - title: Delicate Sound of Thunder
     artist: Pink Floyd
     released: '1988-11-22'
-    coverUrl: https://lastfm.freetls.fastly.net/i/u/ar0/b57ec271fcce3eb01444a3152c86af36
+    coverUrl: https://frzcyvp0c9ei.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/frzcyvp0c9ei/b/art/o/dsot.webp
     previewUrl: https://youtu.be/gAy9A_wajZI
     wikiUrl: https://en.wikipedia.org/wiki/Delicate_Sound_of_Thunder
     genres:
@@ -2134,30 +2159,6 @@ wishlist:
           duration: '5:53'
         - title: Throw Down the Sword
           duration: '5:55'
-  - title: Black Sabbath
-    artist: Black Sabbath
-    released: '1970-02-13'
-    coverUrl: https://upload.wikimedia.org/wikipedia/ru/8/8e/Black_Sabbath_debut.jpg
-    wikiUrl: https://en.wikipedia.org/wiki/Black_Sabbath_(album)
-    genres:
-      - heavy metal
-    sides:
-      - songs:
-        - title: Black Sabbath
-          duration: '6:20'
-        - title: The Wizard
-          duration: '4:24'
-        - title: Behind the Wall of Sleep
-          duration: '3:37'
-        - title: N.I.B.
-          duration: '6:08'
-      - songs:
-        - title: Evil Woman
-          duration: '3:25'
-        - title: Sleeping Village
-          duration: '3:46'
-        - title: Warning
-          duration: '10:28'
   - title: Crystal Ball
     artist: Styx
     released: 'October 1976'
